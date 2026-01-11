@@ -1,0 +1,341 @@
+/* Lawyers Page Specific Styles */
+        .lawyers-hero {
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(45, 45, 45, 0.7)), url('../Assets/Images/slide1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 5% 80px;
+    text-align: center;
+    color: white;
+    margin-top: -120px;
+    padding-top: 200px;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+
+        .lawyers-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .lawyers-hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .firm-profile-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 5%;
+        }
+
+        .firm-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        /* Left Column - Firm Information */
+        .firm-main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .firm-cover {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .firm-logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 20px;
+            position: absolute;
+            bottom: -30px;
+            left: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #1a1a1a;
+        }
+
+        .firm-header {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .firm-header h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .firm-meta {
+            display: flex;
+            gap: 30px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .content-section {
+            margin-bottom: 50px;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Right Column - Firm Details */
+        .firm-sidebar {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            height: fit-content;
+            position: sticky;
+            top: 140px;
+        }
+
+        .contact-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .firm-details {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 30px;
+        }
+
+        .detail-item {
+            margin-bottom: 25px;
+        }
+
+        .detail-item h4 {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .detail-item p {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 175, 55, 0.1);
+            color: #b8941f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Offices Section */
+        .offices-section {
+            margin-top: 60px;
+        }
+
+        .offices-section h3 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .offices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .office-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .office-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .office-header {
+            display: flex;
+            justify-content: between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .office-location h4 {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .office-location p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .view-profile-btn {
+            background: transparent;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-profile-btn:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .office-details {
+            margin-bottom: 20px;
+        }
+
+        .office-address, .office-phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .office-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: rgba(212, 175, 55, 0.1);
+            color: #b8941f;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .more-tags {
+            background: rgba(26, 26, 26, 0.1);
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .firm-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .firm-sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .lawyers-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .firm-main-content {
+                padding: 30px;
+            }
+
+            .firm-header h2 {
+                font-size: 2rem;
+            }
+
+            .firm-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .offices-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .office-card {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .firm-main-content {
+                padding: 20px;
+            }
+
+            .firm-logo {
+                width: 80px;
+                height: 80px;
+                left: 20px;
+                font-size: 1rem;
+            }
+
+            .office-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .view-profile-btn {
+                align-self: flex-start;
+            }
+        }

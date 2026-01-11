@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Keniz Agira & Company Advocates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Desktop Header with Logo and Navigation -->
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="logo">
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Desktop Search -->
+            <div class="search-container">
+                <button class="search-icon" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box" id="searchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="mobile-logo">
+        
+        <div class="mobile-nav-right">
+            <!-- Mobile Search -->
+            <div class="search-container">
+                <button class="mobile-search-icon" id="mobileSearchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="mobile-search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay and Navigation -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Get In Touch</h1>
+            <p>Ready to discuss your legal needs? Contact us today for expert legal advice and comprehensive solutions tailored to your unique situation.</p>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Banner -->
+    <div class="contact-main">
+        <div class="emergency-banner">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-text">
+                    <h3>Emergency Legal Assistance</h3>
+                    <p>Available 24/7 for urgent legal matters</p>
+                </div>
+            </div>
+            <div class="emergency-phone">
+                <i class="fas fa-phone"></i> +254-723-565-739
+            </div>
+        </div>
+
+        <!-- Main Contact Content -->
+        <div class="contact-container">
+            <!-- Contact Information Sidebar -->
+            <aside class="contact-info-sidebar">
+                <h2>Contact Information</h2>
+                <p>Get in touch with us through any of the following methods. We're here to help you with all your legal needs.</p>
+
+                <div class="contact-methods">
+                    <!-- Phone -->
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Phone</h4>
+                            <p>Speak directly with our legal team</p>
+                            <a href="tel:+254723565739" class="method-link">
+                                +254-723-565-739
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Email</h4>
+                            <p>Send us your queries and documents</p>
+                            <a href="mailto:info@kenizagira&companyadvocates.com" class="method-link">
+                                info@kenizagira&companyadvocates.com
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>WhatsApp</h4>
+                            <p>Quick chat and file sharing</p>
+                            <a href="https://wa.me/254723565739" class="method-link" target="_blank">
+                                +254 723 565 739
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Visit -->
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Visit Our Office</h4>
+                            <p>RNG Plaza, 3rd Floor, Nairobi Town</p>
+                            <a href="#map" class="method-link">
+                                Get Directions
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="business-hours">
+                    <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">8:00 AM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">9:00 AM - 1:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Saturday</span>
+                            <span class="time">Closed</span>
+                        </li>
+                        <li>
+                            <span class="day">Emergency</span>
+                            <span class="time">24/7 Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and our legal team will get back to you within 24 hours.</p>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" required>
+                            <div class="error-message">Please enter your first name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" class="form-control" required>
+                            <div class="error-message">Please enter your last name</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <div class="error-message">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                            <div class="error-message">Please enter a valid phone number</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" class="form-control form-select">
+                            <option value="">Select a service</option>
+                            <option value="dispute-resolution">Dispute Resolution & ADR</option>
+                            <option value="corporate-law">Corporate & Commercial Law</option>
+                            <option value="banking-finance">Banking & Finance</option>
+                            <option value="business-registration">Business Registration</option>
+                            <option value="mergers-acquisitions">Mergers & Acquisitions</option>
+                            <option value="employment-law">Employment & Labour Law</option>
+                            <option value="real-estate">Real Estate & Property Law</option>
+                            <option value="immigration">Immigration Services</option>
+                            <option value="energy-infrastructure">Energy & Infrastructure</option>
+                            <option value="company-secretarial">Company Secretarial</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <div class="error-message">Please enter a subject</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Please describe your legal matter in detail..." required></textarea>
+                        <div class="error-message">Please enter your message</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Attach Files (Optional)</label>
+                        <input type="file" id="file" name="file" class="form-control" multiple>
+                        <small style="color: #666; margin-top: 5px;">You can attach multiple files (max 10MB total)</small>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Map Section -->
+        <section class="map-section" id="map">
+            <div class="map-container">
+                <div class="map-header">
+                    <h2>Visit Our Office</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> RNG Plaza, 3rd Floor, Nairobi Town, Kenya</p>
+                </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808723999625!2d36.82115131532693!3d-1.2924998359752475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d3b3c5c7a5%3A0x5b5a5b5b5b5b5b5b!2sRNG%20Plaza%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1633024000000!5m2!1sen!2ske" 
+                    class="map-iframe" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Footer content from previous implementation -->
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        // Contact Form Validation and Submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const formControls = contactForm.querySelectorAll('.form-control');
+
+            // Real-time validation
+            formControls.forEach(control => {
+                control.addEventListener('blur', function() {
+                    validateField(this);
+                });
+
+                control.addEventListener('input', function() {
+                    if (this.classList.contains('error')) {
+                        validateField(this);
+                    }
+                });
+            });
+
+            function validateField(field) {
+                const errorMessage = field.nextElementSibling;
+                
+                if (field.hasAttribute('required') && !field.value.trim()) {
+                    field.classList.add('error');
+                    return false;
+                }
+
+                if (field.type === 'email' && field.value.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        field.classList.add('error');
+                        return false;
+                    }
+                }
+
+                if (field.type === 'tel' && field.value.trim()) {
+                    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+                    if (!phoneRegex.test(field.value)) {
+                        field.classList.add('error');
+                        return false;
+                    }
+                }
+
+                field.classList.remove('error');
+                return true;
+            }
+
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                formControls.forEach(control => {
+                    if (!validateField(control)) {
+                        isValid = false;
+                    }
+                });
+
+                if (isValid) {
+                    // Simulate form submission
+                    const submitBtn = this.querySelector('.submit-btn');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+
+                    // Simulate API call
+                    setTimeout(() => {
+                        successMessage.classList.add('show');
+                        contactForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+
+                        // Scroll to success message
+                        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                        }, 5000);
+                    }, 2000);
+                } else {
+                    // Scroll to first error
+                    const firstError = contactForm.querySelector('.error');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        firstError.focus();
+                    }
+                }
+            });
+
+            // File input styling
+            const fileInput = document.getElementById('file');
+            if (fileInput) {
+                fileInput.addEventListener('change', function() {
+                    const files = this.files;
+                    if (files.length > 0) {
+                        const fileNames = Array.from(files).map(file => file.name).join(', ');
+                        this.nextElementSibling.textContent = `Selected: ${fileNames}`;
+                    }
+                });
+            }
+
+            // Smooth scrolling for map link
+            const mapLink = document.querySelector('a[href="#map"]');
+            if (mapLink) {
+                mapLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const mapSection = document.getElementById('map');
+                    if (mapSection) {
+                        mapSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            }
+        });
+    </script>
+     <script src="index.js"></script>
+    <footer>
+        <footer class="main-footer">
+    <div class="footer-content">
+        <!-- Main Footer Sections -->
+        <div class="footer-sections">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="footer-logo-img">
+                    <div class="logo-text">
+                        <h3>Keniz Agira & Company Advocates</h3>
+                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    For years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+                    <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Practice Areas -->
+            <div class="footer-section">
+                <h4>Practice Areas</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
+                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
+                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
+                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
+                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
+                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Head Office</strong>
+                            <p>RNG Plaza, 3rd Floor<br>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone Numbers</strong>
+                            <p>+254-723-565-739<br>+254-711-000-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Address</strong>
+                            <p>info@KenizAgira&companyadvocates.com<br>consult@KenizAgira&companyadvocates.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours</strong>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
+                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </div>
+                    <div class="newsletter-privacy">
+                        <input type="checkbox" id="newsletter-privacy" required>
+                        <label for="newsletter-privacy">I agree to receive emails and accept the <a href="#">privacy policy</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Keniz Agira & Company Advocates. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            
+            <div class="developer-credit">
+                <p>
+                    Designed and developed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by 
+                    <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" class="developer-link">
+                        WorldWays Web Developers
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

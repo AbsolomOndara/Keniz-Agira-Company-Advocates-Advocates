@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keniz Agira & Company Advocates Advocates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Desktop Header with Logo and Navigation -->
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="logo">
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                
+            </ul>
+            
+            <!-- Desktop Search -->
+            <div class="search-container">
+                <button class="search-icon" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box" id="searchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="mobile-logo">
+        
+        <div class="mobile-nav-right">
+            <!-- Mobile Search -->
+            <div class="search-container">
+                <button class="mobile-search-icon" id="mobileSearchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="mobile-search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay and Navigation -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Hero Section -->
+    <section id="home-hero">
+        <!-- Background Images -->
+        <div class="hero-background active" style="background-image: url('Assets/Images/slide1.jpeg')"></div>
+        <div class="hero-background" style="background-image: url('Assets/Images/ss.avif')"></div>
+        <div class="hero-background" style="background-image: url('Assets/Images/slide3.jpg')"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <br><h1>Legal Solutions for Your Peace of Mind</h1>
+                <p>With years of experience, Keniz Agira & Company Advocates provides comprehensive legal services tailored to your unique needs. Trust our expertise to protect your rights and achieve the best outcomes.</p>
+                <div class="hero-buttons">
+                    <br>
+                    <button class="btn-primary" id="consultationBtn">Book Consultation</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Consultation Form Modal -->
+    <div class="consultation-modal" id="consultationModal">
+        <div class="consultation-form">
+            <button class="form-close" id="formClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Book a Consultation</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+            
+            <form id="consultationForm">
+                <div class="form-group">
+                    <label for="client-name">Full Name</label>
+                    <input type="text" id="client-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-email">Email Address</label>
+                    <input type="email" id="client-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-phone">Phone Number</label>
+                    <input type="tel" id="client-phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-type">Service Needed</label>
+                    <select id="service-type" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="corporate">Corporate Law</option>
+                        <option value="litigation">Litigation</option>
+                        <option value="intellectual">Intellectual Property</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="family">Family Law</option>
+                        <option value="criminal">Criminal Defense</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="consultation-date">Preferred Consultation Date</label>
+                    <input type="date" id="consultation-date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="case-details">Case Details</label>
+                    <textarea id="case-details" name="details" placeholder="Briefly describe your legal matter..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+        <!-- About Preview Section -->
+<section id="about-preview" class="about-preview-section">
+    <div class="about-preview-container">
+        <div class="about-content">
+            <h2 class="about-title">Leading Legal Excellence in 21st Century</h2>
+            <p class="about-description">
+                Keniz Agira & Company Advocates Advocates stands as a pillar of legal excellence in the region, 
+                providing comprehensive legal solutions to individuals, businesses, and organizations. Our team 
+                of seasoned attorneys brings together diverse expertise across multiple legal domains, ensuring 
+                that every client receives personalized attention and strategic counsel tailored to their unique 
+                circumstances. We pride ourselves on our unwavering commitment to integrity, professionalism, 
+                and achieving the best possible outcomes for those we serve.
+            </p>
+            <p class="about-description">
+                Our firm's foundation is built on trust, expertise, and a deep understanding of both local 
+                and international legal frameworks. We believe in building lasting relationships with our 
+                clients, guiding them through complex legal challenges with clarity and confidence. Whether 
+                you're facing a personal legal matter or require sophisticated corporate counsel, our 
+                dedicated team is here to provide the exceptional representation you deserve.
+            </p>
+            <div class="about-actions">
+                <a href="about.html" class="about-learn-more-btn">
+                    Learn More About Us
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="Assets/Images/about.jpg" alt="Keniz Agira & Company Advocates Office" class="about-preview-img">
+            <div class="image-overlay"></div>
+        </div>
+    </div>
+    </section>
+    <!-- Why Choose Us Section -->
+<section id="why-choose-us" class="why-choose-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Why Choose Keniz Agira & Company Advocates</h2>
+            <p class="section-subtitle">Excellence, Integrity, and Unmatched Legal Expertise</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-gavel"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Expert Legal Counsel</h3>
+                <p class="feature-description">
+                    With combined experience, our team of seasoned attorneys 
+                    provides strategic legal guidance across all practice areas. We combine deep 
+                    legal knowledge with practical business insights to deliver optimal outcomes.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-handshake"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Client-Centered Approach</h3>
+                <p class="feature-description">
+                    Your success is our priority. We take the time to understand your unique 
+                    circumstances and goals, providing personalized legal solutions that align 
+                    with your objectives while maintaining the highest ethical standards.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Collaborative Team Strategy</h3>
+                <p class="feature-description">
+                    Complex legal matters demand diverse expertise. Our collaborative approach 
+                    ensures you benefit from the collective knowledge of our entire firm, 
+                    bringing multiple perspectives to develop comprehensive legal strategies.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Transparent & Predictable</h3>
+                <p class="feature-description">
+                    No surprises, no hidden fees. We provide clear cost structures and 
+                    regular updates on your case progress. Our transparent communication 
+                    ensures you're always informed and in control of your legal journey.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Rapid Response Guarantee</h3>
+                <p class="feature-description">
+                    Time is of the essence in legal matters. We guarantee a response within 
+                    24 hours and provide urgent support when needed. Your concerns are 
+                    addressed promptly with the attention they deserve.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3 class="feature-title">Proven Track Record</h3>
+                <p class="feature-description">
+                    Our success speaks for itself. With numerous favorable verdicts, 
+                    successful negotiations, and satisfied clients, we have built a 
+                    reputation for excellence that you can trust with confidence.
+                </p>
+                <div class="feature-highlight"></div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" data-aos="fade-up" data-aos-delay="700">
+            <div class="cta-content">
+                <h3 class="cta-title">Ready to Experience the Difference?</h3>
+                <p class="cta-description">
+                    Join hundreds of satisfied clients who have trusted Keniz Agira & Company Advocates Advocates with their legal matters.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn primary">Schedule Consultation</a>
+                    <a href="tel:+254723565739" class="cta-btn secondary">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whatsapp-float" id="whatsappBtn">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/>
+        </svg>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="profile-pic">KA</div>
+                <div class="header-text">
+                    <h3>Keniz Agira & Company Advocates</h3>
+                    <p>Legal Solutions for Your Peace of Mind</p>
+                </div>
+            </div>
+            <button class="close-btn" id="closeBtn">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="message">
+                <p><strong>Admin</strong></p>
+                <p>Hi there!</p>
+                <p>Welcome to Keniz Agira & Company Advocates</p>
+                <p>How can we help you?</p>
+                <div class="message-time">Just now</div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" id="startChatBtn">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/>
+                </svg>
+                Start Chat
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Practice Areas Section -->
+<section id="practice-areas" class="practice-areas-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Our Practice Areas</h2>
+            <p class="section-subtitle">Comprehensive Legal Expertise Across Multiple Domains</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <!-- Practice Areas Grid -->
+        <div class="practice-grid">
+            <!-- Practice Area 1 -->
+            <div class="practice-card" data-category="dispute">
+                <div class="card-image">
+                    <img src="Assets/Images/pra1.jpg" alt="Dispute Resolution" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="card-title">Dispute Resolution & ADR</h3>
+                    <p class="card-description">
+                        Strategic resolution of complex disputes through litigation, arbitration, 
+                        and mediation with a focus on achieving favorable outcomes efficiently.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 2 -->
+            <div class="practice-card" data-category="corporate">
+                <div class="card-image">
+                    <img src="Assets/Images/pra2.jpeg" alt="Corporate Law" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="card-title">Corporate & Commercial Law</h3>
+                    <p class="card-description">
+                        Comprehensive legal solutions for businesses including contracts, 
+                        compliance, governance, and strategic corporate advisory services.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 3 -->
+            <div class="practice-card" data-category="banking">
+                <div class="card-image">
+                    <img src="Assets/Images/pra3.jpg" alt="Banking & Finance" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="card-title">Banking & Finance</h3>
+                    <p class="card-description">
+                        Expert legal counsel on financial transactions, regulatory compliance, 
+                        loan agreements, and sophisticated debt recovery strategies.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 4 -->
+            <div class="practice-card" data-category="business">
+                <div class="card-image">
+                    <img src="Assets/Images/pra4.png" alt="Business Registration" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="card-title">Business Registration & Advisory</h3>
+                    <p class="card-description">
+                        End-to-end business setup services, regulatory compliance guidance, 
+                        and ongoing corporate advisory for sustainable growth.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 5 -->
+            <div class="practice-card" data-category="mergers">
+                <div class="card-image">
+                    <img src="Assets/Images/pra5.jpeg" alt="Mergers & Acquisitions" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="card-title">Mergers & Acquisitions</h3>
+                    <p class="card-description">
+                        Strategic guidance through all M&A transaction phases including 
+                        due diligence, negotiation, and seamless integration processes.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 6 -->
+            <div class="practice-card" data-category="employment">
+                <div class="card-image">
+                    <img src="Assets/Images/pra6.jpg" alt="Employment Law" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="card-title">Employment & Labour Law</h3>
+                    <p class="card-description">
+                        Comprehensive workplace solutions including employment contracts, 
+                        dispute resolution, and compliance with labour regulations.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 7 -->
+            <div class="practice-card" data-category="real-estate">
+                <div class="card-image">
+                    <img src="Assets/Images/pra7.jpg" alt="Real Estate" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="card-title">Real Estate & Property Law</h3>
+                    <p class="card-description">
+                        Expert handling of property transactions, development projects, 
+                        leases, and all real estate-related legal matters.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 8 -->
+            <div class="practice-card" data-category="immigration">
+                <div class="card-image">
+                    <img src="Assets/Images/pra8.jpeg" alt="Immigration Law" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="card-title">Immigration Services</h3>
+                    <p class="card-description">
+                        Comprehensive immigration support including visas, work permits, 
+                        citizenship applications, and compliance for individuals and businesses.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 9 -->
+            <div class="practice-card" data-category="energy">
+                <div class="card-image">
+                    <img src="Assets/Images/pra9.jpeg" alt="Energy & Infrastructure" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="card-title">Energy & Infrastructure</h3>
+                    <p class="card-description">
+                        Specialized legal support for mining, energy projects, and major 
+                        infrastructure development with regulatory expertise.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+
+            <!-- Practice Area 10 -->
+            <div class="practice-card" data-category="secretarial">
+                <div class="card-image">
+                    <img src="Assets/Images/pra10.jpeg" alt="Company Secretarial" class="practice-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="card-title">Company Secretarial Services</h3>
+                    <p class="card-description">
+                        Professional corporate governance support, statutory compliance, 
+                        and board advisory services for companies of all sizes.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-hover-bg"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Our Team Section -->
+<section id="our-team" class="team-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Meet Our Leadership Team</h2>
+            <p class="section-subtitle">Experienced Legal Professionals Dedicated to Your Success</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <!-- Team Members Grid -->
+        <div class="team-grid">
+            <!-- Team Member 1 - Managing Partner -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-image">
+                    <img src="Assets/Images/team1.jpeg" alt="Keniz Agira Otieno" class="member-img">
+                    <div class="image-overlay">
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Profile">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="member-badge">Managing Partner</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Keniz Agira Otieno</h3>
+                    <p class="member-role">Managing Partner & Senior Advocate</p>
+                    <p class="member-bio">
+                        With over 5 years of legal practice, Keniz brings exceptional expertise 
+                        in corporate law and dispute resolution. His strategic leadership has 
+                        guided numerous clients through complex legal challenges to successful outcomes.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Corporate Law</span>
+                        <span class="expertise-tag">Dispute Resolution</span>
+                        <span class="expertise-tag">M&A</span>
+                    </div>
+                    <div class="member-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254-723-565-739</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>keniz@Keniz Agira & Company Advocatesadvocates.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 - Senior Partner -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-image">
+                    <img src="Assets/" alt="Sarah Mwangi" class="member-img">
+                    <div class="image-overlay">
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Profile">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="member-badge">Senior Partner</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Team Member 2</h3>
+                    <p class="member-role">Senior Partner - Litigation & Real Estate</p>
+                    <p class="member-bio">
+                        specializes in civil litigation and real estate law with 12 years 
+                        of courtroom experience. Her meticulous approach and persuasive advocacy 
+                        have secured favorable judgments for clients across various sectors.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Civil Litigation</span>
+                        <span class="expertise-tag">Real Estate</span>
+                        <span class="expertise-tag">Property Law</span>
+                    </div>
+                    <div class="member-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254 700 000 002</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>@Keniz Agira & Company Advocatesadvocates.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 - Partner -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-image">
+                    <img src="Assets/" alt="David Ochieng" class="member-img">
+                    <div class="image-overlay">
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Profile">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="member-badge">Partner</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Team Member 3</h3>
+                    <p class="member-role">Partner - Commercial & Intellectual Property</p>
+                    <p class="member-bio">
+                        10 years of expertise in commercial transactions and 
+                        intellectual property law. His innovative approach to business law 
+                        has helped numerous enterprises protect their assets and grow sustainably.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Commercial Law</span>
+                        <span class="expertise-tag">Intellectual Property</span>
+                        <span class="expertise-tag">Business Advisory</span>
+                    </div>
+                    <div class="member-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254-723-565-739</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>@kenizagira&companyadvocatesadvocates.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Stats -->
+        <div class="team-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Combined Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Cases Handled</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Practice Areas</div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Partnerships & Collaborations Section -->
+<section id="partnerships" class="partnerships-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Strategic Partnerships & Collaborations</h2>
+            <p class="section-subtitle">Expanding Our Legal Expertise Through Strategic Alliances</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <!-- Partnerships Grid -->
+        <div class="partnerships-grid">
+            <!-- Partnership 1 -->
+            <a href="lawyers.html" class="partnership-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-inner">
+                    <div class="partner-logo">
+                        <img src="Assets/Images/part1.jpg" alt="Kenya Cyber Security and Forensics Association" class="logo-img">
+                        <div class="logo-overlay"></div>
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">KCSFA</h3>
+                        <p class="partner-fullname">Kenya Cyber Security and Forensics Association</p>
+                        <p class="partner-description">
+                            Strategic partnership in cybersecurity law, digital forensics, 
+                            and data protection compliance. Combining legal expertise with 
+                            cutting-edge digital security solutions.
+                        </p>
+                        <div class="partnership-details">
+                            <div class="detail-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Cybersecurity Law</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-database"></i>
+                                <span>Digital Forensics</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Data Protection</span>
+                            </div>
+                        </div>
+                        <div class="click-indicator">
+                            <span>Learn about this partnership</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-badge">
+                        <i class="fas fa-handshake"></i>
+                        Strategic Partner
+                    </div>
+                </div>
+            </a>
+
+            <!-- Partnership 2 -->
+            <a href="lawyers.html" class="partnership-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-inner">
+                    <div class="partner-logo">
+                        <img src="Assets/Images/part2.jpeg" alt="WorldWaysOne Ventures" class="logo-img">
+                        <div class="logo-overlay"></div>
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">WorldWaysOne Ventures</h3>
+                        <p class="partner-fullname">Global Business & Investment Partners</p>
+                        <p class="partner-description">
+                            Collaborative alliance for international business expansion, 
+                            cross-border transactions, and global investment opportunities. 
+                            Bridging local expertise with global reach.
+                        </p>
+                        <div class="partnership-details">
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <span>International Business</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Cross-Border Deals</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Investment Advisory</span>
+                            </div>
+                        </div>
+                        <div class="click-indicator">
+                            <span>Explore this collaboration</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-badge">
+                        <i class="fas fa-rocket"></i>
+                        Growth Partner
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Partnership Benefits -->
+        <div class="partnership-benefits" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefits-header">
+                <h3>Benefits of Our Strategic Alliances</h3>
+                <p>Enhanced capabilities through collaborative expertise</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Integrated Solutions</h4>
+                    <p>Combining legal expertise with specialized partner capabilities for comprehensive client solutions</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Expertise Sharing</h4>
+                    <p>Cross-disciplinary knowledge exchange ensuring cutting-edge legal strategies and insights</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h4>Extended Reach</h4>
+                    <p>Global network access through partner relationships for international legal matters</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Innovation Focus</h4>
+                    <p>Collaborative approach to developing innovative legal solutions for emerging challenges</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="partnership-cta" data-aos="fade-up" data-aos-delay="400">
+            <div class="cta-content">
+                <h3>Leverage Our Network for Your Legal Needs</h3>
+                <p>Access specialized expertise through our strategic partnerships</p>
+                <div class="cta-buttons">
+                    <a href="lawyers.html" class="cta-btn primary">View All Partnerships</a>
+                    <a href="contact.html" class="cta-btn secondary">Discuss Collaboration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="index.js"></script>
+    <footer>
+        <footer class="main-footer">
+    <div class="footer-content">
+        <!-- Main Footer Sections -->
+        <div class="footer-sections">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Advocates Logo" class="footer-logo-img">
+                    <div class="logo-text">
+                        <h3>Keniz Agira & Company Advocates</h3>
+                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    For over 5 years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+                    <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Practice Areas -->
+            <div class="footer-section">
+                <h4>Practice Areas</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
+                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
+                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
+                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
+                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
+                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Head Office</strong>
+                            <p>RNG Plaza, 3rd Floor<br>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone Numbers</strong>
+                            <p>+254-723-565-739<br>+254-711-000-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Address</strong>
+                            <p>info@kenizagiraandcompanyadvocates.com<br>consult@kenizagiraandcompanyadvocates.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours</strong>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
+                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </div>
+                    <div class="newsletter-privacy">
+                        <input type="checkbox" id="newsletter-privacy" required>
+                        <label for="newsletter-privacy">I agree to receive emails and accept the <a href="privacy-policy.html">privacy policy</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Keniz Agira & Company Advocates. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            
+            <div class="developer-credit">
+                <p>
+                    Designed and developed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by 
+                    <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" class="developer-link">
+                        WorldWays Web Developers
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keniz Agira & Company Advocates Advocates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="consult.css">
+</head>
+<body>
+    <!-- Desktop Header with Logo and Navigation -->
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="logo">
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                
+            </ul>
+            
+            <!-- Desktop Search -->
+            <div class="search-container">
+                <button class="search-icon" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box" id="searchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="mobile-logo">
+        
+        <div class="mobile-nav-right">
+            <!-- Mobile Search -->
+            <div class="search-container">
+                <button class="mobile-search-icon" id="mobileSearchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="mobile-search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay and Navigation -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Consultation Hero Section -->
+    <section class="consultation-hero">
+        <div class="consultation-hero-content">
+            <h1>Book Your Legal Consultation</h1>
+            <p>Take the first step towards resolving your legal matters. Schedule a confidential consultation with our expert legal team today.</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Confidential & Secure</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-clock"></i>
+                    <span>Response within 24 hours</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Expert Legal Advice</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Main Content -->
+    <div class="consultation-main">
+        <div class="consultation-container">
+            <!-- Benefits Sidebar -->
+            <aside class="consultation-benefits">
+                <div class="benefits-header">
+                    <h2>Why Consult With Us?</h2>
+                    <p>Experience the difference of working with Kenya's leading legal experts</p>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Expert Legal Analysis</h4>
+                            <p>Get comprehensive analysis of your legal situation from experienced attorneys</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Strategic Planning</h4>
+                            <p>Develop a clear legal strategy tailored to your specific goals and circumstances</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Cost Transparency</h4>
+                            <p>Clear understanding of potential costs and fee structures from the start</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>No Obligation</h4>
+                            <p>Initial consultation comes with no obligation to proceed with our services</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Quick Assessment</h4>
+                            <p>Rapid evaluation of your case and immediate next steps</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Consultation Form -->
+            <section class="consultation-form-section">
+                <!-- Progress Indicator -->
+                <div class="form-progress">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-step" data-step="3">3</div>
+                </div>
+
+                <!-- Success Message -->
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>Consultation Request Received!</h3>
+                    <p>Thank you for booking your consultation. Our legal team will contact you within 24 hours to confirm your appointment and discuss next steps.</p>
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Return to Home
+                    </a>
+                </div>
+
+                <!-- Multi-step Form -->
+                <form class="consultation-form" id="consultationForm">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step active" data-step="1">
+                        <div class="form-header">
+                            <h2>Personal Information</h2>
+                            <p>Let's start with your basic details</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                <div class="error-message">Please enter your first name</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                <div class="error-message">Please enter your last name</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                                <div class="error-message">Please enter a valid phone number</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organization (Optional)</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Consultation Details -->
+                    <div class="form-step" data-step="2">
+                        <div class="form-header">
+                            <h2>Consultation Details</h2>
+                            <p>Tell us about your legal needs</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Service Needed <span class="required">*</span></label>
+                            <select id="serviceType" name="serviceType" class="form-control form-select" required>
+                                <option value="">Select a service</option>
+                                <option value="dispute-resolution">Dispute Resolution & ADR</option>
+                                <option value="corporate-law">Corporate & Commercial Law</option>
+                                <option value="banking-finance">Banking & Finance</option>
+                                <option value="business-registration">Business Registration</option>
+                                <option value="mergers-acquisitions">Mergers & Acquisitions</option>
+                                <option value="employment-law">Employment & Labour Law</option>
+                                <option value="real-estate">Real Estate & Property Law</option>
+                                <option value="immigration">Immigration Services</option>
+                                <option value="energy-infrastructure">Energy & Infrastructure</option>
+                                <option value="company-secretarial">Company Secretarial</option>
+                                <option value="other">Other Legal Matter</option>
+                            </select>
+                            <div class="error-message">Please select a service type</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Consultation Type <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="consultationType" value="in-person" required>
+                                    <div class="radio-custom"></div>
+                                    <div class="radio-text">
+                                        <strong>In-Person Meeting</strong>
+                                        <span>Meet at our RNG Plaza offices in Nairobi</span>
+                                    </div>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="consultationType" value="video-call">
+                                    <div class="radio-custom"></div>
+                                    <div class="radio-text">
+                                        <strong>Video Conference</strong>
+                                        <span>Virtual meeting via Zoom/Teams</span>
+                                    </div>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="consultationType" value="phone-call">
+                                    <div class="radio-custom"></div>
+                                    <div class="radio-text">
+                                        <strong>Phone Call</strong>
+                                        <span>Telephone consultation</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="error-message">Please select a consultation type</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="preferredDate" name="preferredDate" class="form-control" required min="<?php echo date('Y-m-d'); ?>">
+                                <div class="error-message">Please select a preferred date</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+                                <select id="preferredTime" name="preferredTime" class="form-control form-select" required>
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                                    <option value="evening">Evening (5:00 PM - 7:00 PM)</option>
+                                </select>
+                                <div class="error-message">Please select a preferred time</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Case Details -->
+                    <div class="form-step" data-step="3">
+                        <div class="form-header">
+                            <h2>Case Information</h2>
+                            <p>Briefly describe your legal matter</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="caseSummary">Case Summary <span class="required">*</span></label>
+                            <textarea id="caseSummary" name="caseSummary" class="form-control" placeholder="Please provide a brief overview of your legal matter..." required></textarea>
+                            <div class="error-message">Please provide a case summary</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency" class="form-control form-select">
+                                <option value="standard">Standard - No immediate deadline</option>
+                                <option value="urgent">Urgent - Within 2 weeks</option>
+                                <option value="emergency">Emergency - Within 48 hours</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documents">Relevant Documents (Optional)</label>
+                            <input type="file" id="documents" name="documents" class="form-control" multiple>
+                            <small style="color: #666; margin-top: 5px;">You can attach relevant documents (max 10MB total)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" class="form-control" placeholder="Any other information you'd like to share..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary btn-prev" id="prevBtn">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next" id="nextBtn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Submit Consultation Request
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Footer content from previous implementation -->
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        // Consultation Form Multi-step Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('consultationForm');
+            const steps = document.querySelectorAll('.form-step');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            
+            let currentStep = 0;
+
+            // Initialize form
+            updateForm();
+
+            // Next button click
+            nextBtn.addEventListener('click', function() {
+                if (validateStep(currentStep)) {
+                    currentStep++;
+                    updateForm();
+                }
+            });
+
+            // Previous button click
+            prevBtn.addEventListener('click', function() {
+                currentStep--;
+                updateForm();
+            });
+
+            // Radio button selection
+            document.querySelectorAll('.radio-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    const radio = this.querySelector('input[type="radio"]');
+                    radio.checked = true;
+                    
+                    // Update visual state
+                    document.querySelectorAll('.radio-option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    this.classList.add('selected');
+                });
+            });
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateStep(currentStep)) {
+                    // Simulate form submission
+                    const submitBtn = this.querySelector('.btn-submit');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                    submitBtn.disabled = true;
+
+                    // Simulate API call
+                    setTimeout(() => {
+                        form.style.display = 'none';
+                        successMessage.classList.add('active');
+                        
+                        // Reset form after success
+                        setTimeout(() => {
+                            form.reset();
+                            currentStep = 0;
+                            updateForm();
+                            form.style.display = 'block';
+                            successMessage.classList.remove('active');
+                            submitBtn.innerHTML = originalText;
+                            submitBtn.disabled = false;
+                        }, 5000);
+                    }, 2000);
+                }
+            });
+
+            function updateForm() {
+                // Hide all steps
+                steps.forEach(step => {
+                    step.classList.remove('active');
+                });
+
+                // Show current step
+                steps[currentStep].classList.add('active');
+
+                // Update progress steps
+                progressSteps.forEach((step, index) => {
+                    step.classList.remove('active', 'completed');
+                    if (index < currentStep) {
+                        step.classList.add('completed');
+                    } else if (index === currentStep) {
+                        step.classList.add('active');
+                    }
+                });
+
+                // Update buttons
+                if (currentStep === 0) {
+                    prevBtn.classList.add('btn-hidden');
+                } else {
+                    prevBtn.classList.remove('btn-hidden');
+                }
+
+                if (currentStep === steps.length - 1) {
+                    nextBtn.style.display = 'none';
+                    submitBtn.style.display = 'flex';
+                } else {
+                    nextBtn.style.display = 'flex';
+                    submitBtn.style.display = 'none';
+                }
+            }
+
+            function validateStep(step) {
+                const currentStepElement = steps[step];
+                const inputs = currentStepElement.querySelectorAll('input[required], select[required], textarea[required]');
+                let isValid = true;
+
+                inputs.forEach(input => {
+                    if (!validateField(input)) {
+                        isValid = false;
+                    }
+                });
+
+                return isValid;
+            }
+
+            function validateField(field) {
+                const errorMessage = field.nextElementSibling;
+                
+                // Clear previous error
+                field.classList.remove('error');
+                
+                // Check required fields
+                if (field.hasAttribute('required') && !field.value.trim()) {
+                    field.classList.add('error');
+                    return false;
+                }
+
+                // Email validation
+                if (field.type === 'email' && field.value.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        field.classList.add('error');
+                        return false;
+                    }
+                }
+
+                // Phone validation
+                if (field.type === 'tel' && field.value.trim()) {
+                    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+                    if (!phoneRegex.test(field.value)) {
+                        field.classList.add('error');
+                        return false;
+                    }
+                }
+
+                // Date validation
+                if (field.type === 'date' && field.value) {
+                    const selectedDate = new Date(field.value);
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+                    
+                    if (selectedDate < today) {
+                        field.classList.add('error');
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+
+            // Real-time validation
+            form.addEventListener('input', function(e) {
+                if (e.target.hasAttribute('required')) {
+                    validateField(e.target);
+                }
+            });
+
+            // Set minimum date for date input
+            const dateInput = document.getElementById('preferredDate');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.min = today;
+            }
+        });
+    </script>
+    <script src="index.js"></script>
+    <footer>
+        <footer class="main-footer">
+    <div class="footer-content">
+        <!-- Main Footer Sections -->
+        <div class="footer-sections">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Advocates Logo" class="footer-logo-img">
+                    <div class="logo-text">
+                        <h3>Keniz Agira & Company Advocates</h3>
+                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    For over 5 years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+                    <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Practice Areas -->
+            <div class="footer-section">
+                <h4>Practice Areas</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
+                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
+                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
+                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
+                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
+                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Head Office</strong>
+                            <p>RNG Plaza, 3rd Floor<br>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone Numbers</strong>
+                            <p>+254-723-565-739<br>+254-711-000-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Address</strong>
+                            <p>info@kenizagiraandcompanyadvocates.com<br>consult@kenizagiraandcompanyadvocates.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours</strong>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
+                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </div>
+                    <div class="newsletter-privacy">
+                        <input type="checkbox" id="newsletter-privacy" required>
+                        <label for="newsletter-privacy">I agree to receive emails and accept the <a href="#">privacy policy</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Keniz Agira & Company Advocates. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            
+            <div class="developer-credit">
+                <p>
+                    Designed and developed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by 
+                    <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" class="developer-link">
+                        WorldWays Web Developers
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
