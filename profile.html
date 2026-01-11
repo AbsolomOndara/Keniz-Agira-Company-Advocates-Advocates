@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keniz Agira & Company Advocates - Professional Profile</title>
+    <title>Keniz Agira & Company Advocates - Cybersecurity & Digital Forensics Specialists</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="profile.css">
+    <style>
+        /* Cybersecurity theme overrides */
+        :root {
+            --cyber-primary: #1a3a6c;
+            --cyber-secondary: #0d6efd;
+            --cyber-accent: #dc3545;
+            --cyber-success: #198754;
+            --cyber-warning: #fd7e14;
+            --cyber-dark: #1a1a1a;
+            --cyber-light: #f8f9fa;
+        }
+        
+        .cyber-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .certification-badge {
+            background: linear-gradient(135deg, #198754, #20c997);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
     <!-- Desktop Header with Logo and Navigation -->
@@ -18,9 +54,9 @@
         <nav class="navbar">
             <ul class="nav-links">
                  <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Cybersecurity Services</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             
@@ -66,21 +102,26 @@
         </button>
         <ul class="mobile-nav-links">
              <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Cybersecurity Services</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <!-- Profile Hero Section -->
     <section class="profile-hero">
-        <div class="profile-cover">
+        <div class="profile-cover" style="background: linear-gradient(135deg, #1a3a6c 0%, #0d6efd 100%);">
             <div class="firm-header-info">
                 <h1>Keniz Agira & Company Advocates</h1>
-                <p>Nairobi, Kenya</p>
-                <button class="contact-header-btn">
-                    <i class="fas fa-phone"></i> Contact Us
+                <p>Cybersecurity & Digital Forensics Legal Specialists | Nairobi, Kenya</p>
+                <div class="cyber-certifications">
+                    <span class="certification-badge"><i class="fas fa-shield-alt"></i> Certified Digital Forensics</span>
+                    <span class="certification-badge"><i class="fas fa-lock"></i> Data Protection Specialists</span>
+                    <span class="certification-badge"><i class="fas fa-network-wired"></i> Incident Response Experts</span>
+                </div>
+                <button class="contact-header-btn" onclick="location.href='contact.html'">
+                    <i class="fas fa-phone"></i> 24/7 Cyber Emergency
                 </button>
             </div>
         </div>
@@ -92,150 +133,164 @@
             <!-- Left Column - Main Content -->
             <div class="main-content">
                 <div class="content-section">
-                    <h2>Who We Are</h2>
+                    <h2>Kenya's Premier Cybersecurity Law Firm</h2>
                     <p>
-                        Keniz Agira & Company Advocates is a premier full-service law firm in Kenya, recognized for delivering exceptional legal services tailored to diverse clients. Our clientele includes individuals, dynamic corporations, esteemed financial institutions, governmental, and non-governmental organizations, each with unique legal needs. Whether you are a local business or an international investor, our expert legal team is well-equipped to navigate the complexities of Kenyan law and cross-border legal matters. As a top choice for international legal services, we specialize in providing comprehensive guidance that meets the specific requirements of our varied client base.
+                        Keniz Agira & Company Advocates is Kenya's leading law firm specializing exclusively in cybersecurity, digital forensics, and data protection law. We provide comprehensive legal solutions to protect organizations from digital threats while ensuring compliance with Kenya's Data Protection Act and international cybersecurity regulations. Our specialized practice combines deep legal expertise with technical understanding of digital forensics, incident response, and cyber risk management.
+                    </p>
+                    <p>
+                        As the trusted legal partner for forward-thinking organizations, we serve businesses across sectors including financial institutions, technology companies, healthcare providers, government agencies, and multinational corporations. Our team is certified in digital forensics methodologies and stays ahead of evolving cyber threats through continuous training and strategic partnerships with cybersecurity technology firms.
                     </p>
                 </div>
 
                 <div class="content-section">
-                    <h2>Our Team</h2>
+                    <h2>Our Cybersecurity Specializations</h2>
                     <p>
-                        Our partners bring a wealth of experience and diverse educational backgrounds, contributing vibrant perspectives to our practice. This diversity enables us to respond effectively to the evolving demands of a globalized economy. With an experienced legal team, we offer innovative solutions designed for both local and international clients, covering multiple sectors, including corporate law, financial regulations, and investment law. We are your trusted partner for navigating the Kenyan legal landscape.
+                        Our legal team combines cybersecurity certifications with extensive courtroom experience, providing comprehensive protection against digital threats. We offer specialized expertise across the entire cybersecurity lifecycle - from proactive risk assessment and policy development to incident response and post-breach litigation.
                     </p>
                 </div>
 
                 <div class="content-section">
-                    <h2>Comprehensive Practice Areas</h2>
+                    <h2>Comprehensive Cybersecurity Practice Areas</h2>
                     <div class="two-column-section">
-                        <!-- Banking & Finance -->
+                        <!-- Cybersecurity Legal Advisory -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-landmark"></i> Banking & Finance</h4>
-                            <p>Comprehensive legal counsel on financial transactions, regulatory compliance, and sophisticated debt recovery strategies.</p>
+                            <h4><i class="fas fa-shield-alt"></i> Cybersecurity Legal Advisory</h4>
+                            <p>Proactive legal frameworks, policy development, and risk management strategies to protect organizations from digital threats.</p>
                             <ul>
-                                <li>Securities Investment & Tax Planning</li>
-                                <li>Financial Services Regulation</li>
-                                <li>Equity & Debt Capital Markets</li>
-                                <li>Structured & Project Finance</li>
-                                <li>Funds & Asset Management</li>
-                                <li>Public-Private Partnerships (PPP)</li>
-                                <li>Sustainable Finance Solutions</li>
+                                <li>Cybersecurity Policy Development</li>
+                                <li>Digital Risk Assessment & Management</li>
+                                <li>Third-Party Vendor Security Compliance</li>
+                                <li>Cyber Insurance Policy Review</li>
+                                <li>Cloud Security & SaaS Agreement Review</li>
+                                <li>IoT Device Security Compliance</li>
+                                <li>Mobile Application Security Assessments</li>
                             </ul>
                         </div>
 
-                        <!-- Litigation & Disputes -->
+                        <!-- Digital Forensics & Investigations -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-gavel"></i> Litigation & Disputes</h4>
-                            <p>Strategic resolution of complex disputes through litigation, arbitration, and mediation with focus on achieving favorable outcomes.</p>
+                            <h4><i class="fas fa-search"></i> Digital Forensics & Investigations</h4>
+                            <p>Certified digital evidence collection, preservation, and analysis for legal proceedings and internal investigations.</p>
                             <ul>
-                                <li>Commercial & Civil Litigation</li>
-                                <li>Alternative Dispute Resolution</li>
-                                <li>Appeal & Class Action Cases</li>
-                                <li>Professional Responsibility Matters</li>
-                                <li>Restructuring & Insolvency</li>
-                                <li>Antitrust Litigation</li>
+                                <li>Digital Evidence Chain of Custody</li>
+                                <li>Computer & Mobile Device Forensics</li>
+                                <li>Network Intrusion Analysis & Attribution</li>
+                                <li>Employee Misconduct Investigations</li>
+                                <li>Social Media & Digital Communication Analysis</li>
+                                <li>Deleted Data Recovery & Analysis</li>
+                                <li>Cryptocurrency Transaction Tracing</li>
                             </ul>
                         </div>
 
-                        <!-- Corporate & Commercial -->
+                        <!-- Data Protection & Privacy Compliance -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-building"></i> Corporate & Commercial</h4>
-                            <p>End-to-end business legal solutions from formation to complex transactions and corporate governance.</p>
+                            <h4><i class="fas fa-lock"></i> Data Protection & Privacy Compliance</h4>
+                            <p>Full compliance with Kenya's Data Protection Act, GDPR, and international privacy regulations.</p>
                             <ul>
-                                <li>Mergers & Acquisitions</li>
-                                <li>Business Registration & Licensing</li>
-                                <li>Contract Drafting & Negotiation</li>
-                                <li>Corporate Governance</li>
-                                <li>Due Diligence & Compliance</li>
-                                <li>International Trade Law</li>
+                                <li>Data Protection Act (Kenya) Compliance</li>
+                                <li>GDPR Readiness & Implementation</li>
+                                <li>Privacy Impact Assessments & Audits</li>
+                                <li>Cross-Border Data Transfer Solutions</li>
+                                <li>Data Protection Officer (DPO) Services</li>
+                                <li>Cookie Compliance & Consent Management</li>
+                                <li>Vendor Privacy Risk Assessments</li>
                             </ul>
                         </div>
 
-                        <!-- Real Estate -->
+                        <!-- Cyber Incident Response -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-home"></i> Real Estate</h4>
-                            <p>Expert handling of property transactions, development projects, and all real estate-related legal matters.</p>
+                            <h4><i class="fas fa-exclamation-triangle"></i> Cyber Incident Response</h4>
+                            <p>24/7 emergency legal support for data breaches, ransomware attacks, and cybersecurity incidents.</p>
                             <ul>
-                                <li>Property Transactions & Conveyancing</li>
-                                <li>Commercial & Residential Leases</li>
-                                <li>Landlord & Tenant Disputes</li>
-                                <li>Mortgage & Financing Agreements</li>
-                                <li>Construction & Development Law</li>
-                                <li>Land Use & Zoning Regulations</li>
+                                <li>Ransomware Attack Response & Negotiation</li>
+                                <li>Data Breach Containment & Investigation</li>
+                                <li>Regulatory Notification Management</li>
+                                <li>Crisis Communication Strategy</li>
+                                <li>Third-Party Breach Impact Assessment</li>
+                                <li>Business Email Compromise Recovery</li>
+                                <li>Post-Incident Recovery Planning</li>
                             </ul>
                         </div>
 
-                        <!-- Intellectual Property -->
+                        <!-- Data Breach Management -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-copyright"></i> Intellectual Property</h4>
-                            <p>Comprehensive protection of intellectual assets through registration, enforcement, and strategic counsel.</p>
+                            <h4><i class="fas fa-database"></i> Data Breach Management</h4>
+                            <p>Comprehensive legal management of data breaches from discovery to resolution.</p>
                             <ul>
-                                <li>Trademark Registration & Protection</li>
-                                <li>Copyright & Patent Law</li>
-                                <li>IP Litigation & Enforcement</li>
-                                <li>Technology Transfer Agreements</li>
-                                <li>Brand Protection Strategies</li>
-                                <li>Entertainment & Media Law</li>
+                                <li>Data Breach Notification Compliance</li>
+                                <li>Stakeholder Communication Strategy</li>
+                                <li>Regulatory Investigation Response</li>
+                                <li>Class Action Litigation Prevention</li>
+                                <li>Breach Cost Mitigation & Recovery</li>
+                                <li>Credit Monitoring & Identity Theft Services</li>
+                                <li>Insurance Coordination & Claim Management</li>
                             </ul>
                         </div>
 
-                        <!-- Employment & Labor -->
+                        <!-- Cyber Litigation & Dispute Resolution -->
                         <div class="practice-detail-card">
-                            <h4><i class="fas fa-briefcase"></i> Employment & Labor</h4>
-                            <p>Strategic workplace solutions ensuring compliance and fostering productive employer-employee relationships.</p>
+                            <h4><i class="fas fa-gavel"></i> Cyber Litigation</h4>
+                            <p>Specialized representation in cybercrime cases, technology disputes, and regulatory actions.</p>
                             <ul>
-                                <li>Employment Contracts & Policies</li>
-                                <li>Workplace Dispute Resolution</li>
-                                <li>Termination & Redundancy</li>
-                                <li>Employee Benefits & Compensation</li>
-                                <li>Labor Law Compliance</li>
-                                <li>Workplace Safety Regulations</li>
+                                <li>Cybercrime Prosecution & Defense</li>
+                                <li>Technology Contract Disputes</li>
+                                <li>Intellectual Property Cyber Theft Cases</li>
+                                <li>Regulatory Enforcement Defense</li>
+                                <li>Class Action Defense in Data Breaches</li>
+                                <li>Expert Witness Selection & Management</li>
+                                <li>Digital Evidence Admissibility Challenges</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Additional Practice Areas -->
+                <!-- Technical Capabilities -->
                 <div class="content-section">
-                    <h2>Specialized Legal Services</h2>
+                    <h2>Technical Capabilities & Certifications</h2>
                     <div class="practice-areas-grid">
                         <div class="practice-category">
-                            <h4>Immigration Law</h4>
+                            <h4><i class="fas fa-certificate"></i> Forensic Tools</h4>
                             <div class="practice-tags">
-                                <span class="practice-tag">Work Permits</span>
-                                <span class="practice-tag">Citizenship</span>
-                                <span class="practice-tag">Visa Applications</span>
-                                <span class="practice-tag">Residency</span>
+                                <span class="practice-tag">EnCase Certified</span>
+                                <span class="practice-tag">FTK Expertise</span>
+                                <span class="practice-tag">Cellebrite Certified</span>
+                                <span class="practice-tag">Network Forensics</span>
+                                <span class="practice-tag">Memory Analysis</span>
+                                <span class="practice-tag">Malware Analysis</span>
                             </div>
                         </div>
 
                         <div class="practice-category">
-                            <h4>Family Law</h4>
+                            <h4><i class="fas fa-user-shield"></i> Certifications</h4>
                             <div class="practice-tags">
-                                <span class="practice-tag">Divorce</span>
-                                <span class="practice-tag">Child Custody</span>
-                                <span class="practice-tag">Adoption</span>
-                                <span class="practice-tag">Estate Planning</span>
+                                <span class="practice-tag">CFCE (Certified Forensic Computer Examiner)</span>
+                                <span class="practice-tag">CISSP (Certified Information Systems Security Professional)</span>
+                                <span class="practice-tag">CIPP/E (Certified Information Privacy Professional)</span>
+                                <span class="practice-tag">GIAC Certified</span>
+                                <span class="practice-tag">ISO 27001 Lead Auditor</span>
                             </div>
                         </div>
 
                         <div class="practice-category">
-                            <h4>Criminal Defense</h4>
+                            <h4><i class="fas fa-network-wired"></i> Technology Specializations</h4>
                             <div class="practice-tags">
-                                <span class="practice-tag">Criminal Litigation</span>
-                                <span class="practice-tag">Bail Applications</span>
-                                <span class="practice-tag">Appeals</span>
-                                <span class="practice-tag">Legal Defense</span>
+                                <span class="practice-tag">Cloud Security (AWS, Azure, GCP)</span>
+                                <span class="practice-tag">Blockchain & Cryptocurrency</span>
+                                <span class="practice-tag">IoT Security</span>
+                                <span class="practice-tag">Mobile Security</span>
+                                <span class="practice-tag">AI & Machine Learning Security</span>
                             </div>
                         </div>
 
                         <div class="practice-category">
-                            <h4>Technology Law</h4>
+                            <h4><i class="fas fa-balance-scale"></i> Regulatory Expertise</h4>
                             <div class="practice-tags">
-                                <span class="practice-tag">Data Privacy</span>
-                                <span class="practice-tag">E-commerce</span>
-                                <span class="practice-tag">Cyber Security</span>
-                                <span class="practice-tag">IT Contracts</span>
+                                <span class="practice-tag">Kenya Data Protection Act</span>
+                                <span class="practice-tag">GDPR Compliance</span>
+                                <span class="practice-tag">PCI DSS</span>
+                                <span class="practice-tag">HIPAA (Healthcare)</span>
+                                <span class="practice-tag">SOX Compliance</span>
+                                <span class="practice-tag">Financial Sector Regulations</span>
                             </div>
                         </div>
                     </div>
@@ -243,45 +298,72 @@
 
                 <!-- Team Section -->
                 <div class="content-section team-section">
-                    <h2>Our Partners and Associates</h2>
+                    <h2>Our Cybersecurity Legal Team</h2>
                     <div class="team-grid">
                         <!-- Team Member 1 -->
                         <div class="team-member-card">
-                            <div class="member-avatar">KM</div>
+                            <div class="member-avatar" style="background: linear-gradient(135deg, #1a3a6c 0%, #0d6efd 100%);">KA</div>
                             <div class="member-info">
-                                <h4>Keniz Agira</h4>
-                                <p class="member-role">Managing Partner</p>
-                                <p>Specializes in Corporate Law and Commercial Litigation with over 15 years of experience.</p>
-                                <a href="find-lawyer.html#keniz" class="view-profile-link">
-                                    View Full Profile <i class="fas fa-plus"></i>
+                                <h4>Keniz Agira <span class="cyber-badge">CFCE Certified</span></h4>
+                                <p class="member-role">Managing Partner & Cybersecurity Law Specialist</p>
+                                <p>Certified Forensic Computer Examiner with expertise in digital forensics, incident response, and cyber litigation. Leads our cybersecurity practice with over 5 years of specialized experience.</p>
+                                <a href="#" class="view-profile-link">
+                                    View Cybersecurity Profile <i class="fas fa-shield-alt"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Team Member 2 -->
                         <div class="team-member-card">
-                            <div class="member-avatar">TM</div>
+                            <div class="member-avatar" style="background: linear-gradient(135deg, #198754 0%, #20c997 100%);">DF</div>
                             <div class="member-info">
-                                <h4>Team Member 1</h4>
-                                <p class="member-role">Senior Partner</p>
-                                <p>Expert in Real Estate Law and Civil Litigation with 12 years of courtroom experience.</p>
-                                <a href="find-lawyer.html#sarah" class="view-profile-link">
-                                    View Full Profile <i class="fas fa-plus"></i>
+                                <h4>Digital Forensics Team <span class="cyber-badge">EnCase Certified</span></h4>
+                                <p class="member-role">Senior Digital Forensics Specialists</p>
+                                <p>Certified in multiple digital forensics methodologies including computer forensics, mobile device examination, network intrusion analysis, and malware reverse engineering.</p>
+                                <a href="#" class="view-profile-link">
+                                    View Forensics Expertise <i class="fas fa-search"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Team Member 3 -->
                         <div class="team-member-card">
-                            <div class="member-avatar">TM</div>
+                            <div class="member-avatar" style="background: linear-gradient(135deg, #6f42c1 0%, #8a63d2 100%);">DP</div>
                             <div class="member-info">
-                                <h4>Team Member 2</h4>
-                                <p class="member-role">Partner</p>
-                                <p>Focuses on Intellectual Property and Commercial Transactions with 10 years of expertise.</p>
-                                <a href="find-lawyer.html#team-member-2" class="view-profile-link">
-                                    View Full Profile <i class="fas fa-plus"></i>
+                                <h4>Data Protection Team <span class="cyber-badge">CIPP/E Certified</span></h4>
+                                <p class="member-role">Privacy & Compliance Specialists</p>
+                                <p>Certified Information Privacy Professionals with expertise in Kenya's Data Protection Act, GDPR compliance, privacy impact assessments, and regulatory investigation response.</p>
+                                <a href="#" class="view-profile-link">
+                                    View Compliance Profile <i class="fas fa-lock"></i>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Industry Recognition -->
+                <div class="content-section">
+                    <h2>Industry Recognition & Partnerships</h2>
+                    <div class="recognition-grid">
+                        <div class="recognition-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Strategic Partnership</h4>
+                            <p>Official legal partner of Kenya Cyber Security and Forensics Association (KCSFA)</p>
+                        </div>
+                        <div class="recognition-item">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Recognition</h4>
+                            <p>2024 Cybersecurity Law Firm of the Year - East Africa Legal Awards</p>
+                        </div>
+                        <div class="recognition-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Technology Alliances</h4>
+                            <p>Partnerships with leading cybersecurity technology providers</p>
+                        </div>
+                        <div class="recognition-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Academic Collaboration</h4>
+                            <p>Collaboration with universities on cybersecurity law research</p>
                         </div>
                     </div>
                 </div>
@@ -290,51 +372,62 @@
             <!-- Right Column - Sidebar -->
             <div class="profile-sidebar">
                 <div class="firm-quick-info">
-                    <h3>About Keniz Agira & Company Advocates</h3>
+                    <h3>Cybersecurity Firm Profile</h3>
+                    <div class="info-item">
+                        <h4>Specialization</h4>
+                        <p>Cybersecurity & Digital Forensics Law</p>
+                    </div>
                     <div class="info-item">
                         <h4>Founded</h4>
-                        <p>2025</p>
+                        <p>2020 (Cybersecurity Practice)</p>
                     </div>
                     <div class="info-item">
                         <h4>Team Size</h4>
-                        <p>10+ Professionals</p>
+                        <p>15+ Cybersecurity Specialists</p>
                     </div>
                     <div class="info-item">
-                        <h4>Offices</h4>
-                        <p>2 Locations</p>
+                        <h4>Response Time</h4>
+                        <p>24/7 Incident Response</p>
                     </div>
                     <div class="info-item">
                         <h4>Website</h4>
                         <p>www.kenizagiraandcompanyadvocates.com</p>
                     </div>
-                    <div class="verified-badge">
+                    <div class="verified-badge" style="background: linear-gradient(135deg, #0d6efd, #0b5ed7);">
                         <i class="fas fa-shield-alt"></i>
-                        Verified Law Firm
+                        Certified Cybersecurity Law Firm
                     </div>
                 </div>
 
                 <div class="contact-actions">
-                    <button class="action-btn">
+                    <button class="action-btn" onclick="window.open('https://wa.me/254723565739', '_blank')">
                         <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
+                        <span>Cyber Emergency Chat</span>
                     </button>
-                    <button class="action-btn">
+                    <button class="action-btn" onclick="location.href='tel:+254723565739'">
                         <i class="fas fa-phone"></i>
-                        <span>Reveal Phone</span>
+                        <span>24/7 Emergency Line</span>
                     </button>
-                    <a href="https://www.kenizagira&companyadvocates.com" class="action-btn">
-                        <i class="fas fa-globe"></i>
-                        <span>Website</span>
+                    <a href="contact.html" class="action-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Consultation</span>
                     </a>
                 </div>
 
                 <div class="languages-section" style="margin-bottom: 30px;">
-                    <h4 style="color: #1a1a1a; margin-bottom: 15px; font-weight: 600;">Languages Spoken</h4>
+                    <h4 style="color: #1a1a1a; margin-bottom: 15px; font-weight: 600;">Service Languages</h4>
                     <div class="practice-tags">
                         <span class="practice-tag">English</span>
                         <span class="practice-tag">Swahili</span>
                         <span class="practice-tag">French</span>
                     </div>
+                </div>
+                
+                <div class="emergency-notice">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h4>Cyber Emergency?</h4>
+                    <p>Call our 24/7 emergency line for immediate incident response:</p>
+                    <p class="emergency-number">+254-723-565-739</p>
                 </div>
 
                 <div class="social-links-sidebar">
@@ -344,8 +437,8 @@
                     <a href="#" class="social-link" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
@@ -364,11 +457,11 @@
                     <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="footer-logo-img">
                     <div class="logo-text">
                         <h3>Keniz Agira & Company Advocates</h3>
-                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                        <p>Cybersecurity & Digital Forensics Legal Specialists</p>
                     </div>
                 </div>
                 <p class="footer-description">
-                    For years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                    Kenya's premier legal firm specializing in cybersecurity law, digital forensics, and data protection compliance. We protect your digital assets with expert legal solutions.
                 </p>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">
@@ -383,10 +476,20 @@
                     <a href="#" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
                 </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Cybersecurity Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#cybersecurity-advisory"><i class="fas fa-shield-alt"></i> Cybersecurity Advisory</a></li>
+                    <li><a href="services.html#digital-forensics"><i class="fas fa-search"></i> Digital Forensics</a></li>
+                    <li><a href="services.html#data-protection"><i class="fas fa-lock"></i> Data Protection</a></li>
+                    <li><a href="services.html#incident-response"><i class="fas fa-exclamation-triangle"></i> Incident Response</a></li>
+                    <li><a href="services.html#data-breach"><i class="fas fa-database"></i> Data Breach Management</a></li>
+                    <li><a href="services.html#cyber-litigation"><i class="fas fa-gavel"></i> Cyber Litigation</a></li>
+                </ul>
             </div>
 
             <!-- Quick Links -->
@@ -395,23 +498,9 @@
                 <ul class="footer-links">
                     <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
                     <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Cybersecurity Services</a></li>
                     <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
                     <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Practice Areas -->
-            <div class="footer-section">
-                <h4>Practice Areas</h4>
-                <ul class="footer-links">
-                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
-                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
-                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
-                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
-                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
-                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
                 </ul>
             </div>
 
@@ -430,21 +519,21 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Phone Numbers</strong>
-                            <p>+254-723-565-739<br>+254-711-000-000</p>
+                            <p>+254-723-565-739 (24/7 Cyber Emergency)<br>+254-711-000-000 (General Inquiries)</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email Address</strong>
-                            <p>info@kenizagira.com<br>consult@kenizagira.com</p>
+                            <p>cyber@kenizagiraandcompanyadvocates.com<br>consult@kenizagiraandcompanyadvocates.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <strong>Business Hours</strong>
-                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Cyber Emergency: 24/7 Response</p>
                         </div>
                     </div>
                 </div>
@@ -455,8 +544,8 @@
         <div class="newsletter-section">
             <div class="newsletter-content">
                 <div class="newsletter-text">
-                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
-                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                    <h4><i class="fas fa-shield-alt"></i> Stay Cyber Secure</h4>
+                    <p>Subscribe for cybersecurity legal updates, breach alerts, and compliance insights</p>
                 </div>
                 <form class="newsletter-form">
                     <div class="input-group">

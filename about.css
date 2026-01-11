@@ -600,3 +600,527 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Cybersecurity Capabilities Section */
+.capabilities-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.capabilities-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(13, 110, 253, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(26, 26, 26, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.capabilities-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.capabilities-section .section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d6efd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.capabilities-section .section-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.capability-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(13, 110, 253, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.capability-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.capability-item:hover::before {
+    left: 100%;
+}
+
+.capability-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.capability-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.05) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.capability-icon i {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.capability-item:hover .capability-icon {
+    transform: scale(1.1);
+    background: transparent;
+}
+
+.capability-item:hover .capability-icon::after {
+    opacity: 1;
+}
+
+.capability-item:hover .capability-icon i {
+    color: white;
+    transform: scale(1.1);
+}
+
+.capability-item h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    border-radius: 0 0 15px 15px;
+}
+
+.capability-item:hover::after {
+    transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .capabilities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .capabilities-section {
+        padding: 80px 5%;
+    }
+    
+    .capabilities-section .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .capabilities-section .section-header p {
+        font-size: 1.1rem;
+    }
+    
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 500px;
+    }
+    
+    .capability-item {
+        padding: 35px 25px;
+    }
+    
+    .capability-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .capability-icon i {
+        font-size: 2rem;
+    }
+    
+    .capability-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .capabilities-section {
+        padding: 60px 5%;
+    }
+    
+    .capabilities-section .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .capability-item {
+        padding: 30px 20px;
+    }
+    
+    .capability-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .capability-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .capability-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .capability-item p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation Classes */
+.capability-item[data-aos] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.capability-item[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Cybersecurity Capabilities Section */
+.capabilities-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.capabilities-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(13, 110, 253, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(26, 26, 26, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.capabilities-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.capabilities-section .section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d6efd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.capabilities-section .section-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.capability-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(13, 110, 253, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.capability-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.capability-item:hover::before {
+    left: 100%;
+}
+
+.capability-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.capability-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.05) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.capability-icon i {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.capability-item:hover .capability-icon {
+    transform: scale(1.1);
+    background: transparent;
+}
+
+.capability-item:hover .capability-icon::after {
+    opacity: 1;
+}
+
+.capability-item:hover .capability-icon i {
+    color: white;
+    transform: scale(1.1);
+}
+
+.capability-item h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    border-radius: 0 0 15px 15px;
+}
+
+.capability-item:hover::after {
+    transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .capabilities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .capabilities-section {
+        padding: 80px 5%;
+    }
+    
+    .capabilities-section .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .capabilities-section .section-header p {
+        font-size: 1.1rem;
+    }
+    
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 500px;
+    }
+    
+    .capability-item {
+        padding: 35px 25px;
+    }
+    
+    .capability-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .capability-icon i {
+        font-size: 2rem;
+    }
+    
+    .capability-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .capabilities-section {
+        padding: 60px 5%;
+    }
+    
+    .capabilities-section .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .capability-item {
+        padding: 30px 20px;
+    }
+    
+    .capability-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .capability-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .capability-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .capability-item p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation Classes */
+.capability-item[data-aos] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.capability-item[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}

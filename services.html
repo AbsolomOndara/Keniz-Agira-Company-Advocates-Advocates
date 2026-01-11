@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Areas - Keniz Agira & Company Advocates</title>
+    <title>Cybersecurity & Digital Forensics Legal Services | Keniz Agira & Company Advocates</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="services.css">
+    <style>
+        /* Additional Cybersecurity Styles */
+        .cyber-icon {
+            color: #0d6efd;
+        }
+        
+        .forensic-icon {
+            color: #198754;
+        }
+        
+        .compliance-icon {
+            color: #6f42c1;
+        }
+        
+        .incident-icon {
+            color: #fd7e14;
+        }
+        
+        .data-icon {
+            color: #20c997;
+        }
+        
+        .litigation-icon {
+            color: #dc3545;
+        }
+        
+        .service-section.cyber {
+            border-left: 5px solid #0d6efd;
+        }
+        
+        .service-section.forensic {
+            border-left: 5px solid #198754;
+        }
+        
+        .service-section.compliance {
+            border-left: 5px solid #6f42c1;
+        }
+        
+        .service-section.incident {
+            border-left: 5px solid #fd7e14;
+        }
+        
+        .service-section.data {
+            border-left: 5px solid #20c997;
+        }
+        
+        .service-section.litigation {
+            border-left: 5px solid #dc3545;
+        }
+        
+        .cyber-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+        
+        .cyber-stats {
+            background: linear-gradient(135deg, #1a3a6c 0%, #0d6efd 100%);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <!-- Desktop Header with Logo and Navigation -->
@@ -17,9 +86,9 @@
         
         <nav class="navbar">
             <ul class="nav-links">
-                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Cybersecurity & Forensics</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -65,19 +134,19 @@
             <i class="fas fa-times"></i>
         </button>
         <ul class="mobile-nav-links">
-             <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Cybersecurity & Forensics</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Services Hero Section -->
+    <!-- Cybersecurity Hero Section -->
     <section class="services-hero">
         <div class="services-hero-content">
-            <h1>Comprehensive Legal Services</h1>
-            <p>Expert legal solutions tailored to meet your unique needs. With years of experience, we provide comprehensive legal services across multiple practice areas to individuals, businesses, and organizations.</p>
+            <h1>Cybersecurity & Digital Forensics Legal Services</h1>
+            <p>Expert legal counsel for the digital age. We specialize in cybersecurity law, digital forensics investigations, data protection compliance, and technology-related disputes to protect your digital assets and reputation in Kenya's evolving cyber landscape.</p>
         </div>
     </section>
 
@@ -85,124 +154,130 @@
     <div class="services-main-container">
         <!-- Left Sidebar Navigation -->
         <aside class="services-sidebar">
-            <h3>Our Services</h3>
+            <h3>Our Cybersecurity Services</h3>
             <nav class="service-nav-items">
-                <a href="#dispute-resolution" class="service-nav-item active">
-                    <i class="fas fa-balance-scale"></i>Dispute Resolution
+                <a href="#cybersecurity-advisory" class="service-nav-item active">
+                    <i class="fas fa-shield-alt cyber-icon"></i>Cybersecurity Legal Advisory
                 </a>
-                <a href="#corporate-law" class="service-nav-item">
-                    <i class="fas fa-building"></i>Corporate Law
+                <a href="#digital-forensics" class="service-nav-item">
+                    <i class="fas fa-search forensic-icon"></i>Digital Forensics
                 </a>
-                <a href="#banking-finance" class="service-nav-item">
-                    <i class="fas fa-landmark"></i>Banking & Finance
+                <a href="#data-protection" class="service-nav-item">
+                    <i class="fas fa-clipboard-check compliance-icon"></i>Data Protection Compliance
                 </a>
-                <a href="#business-registration" class="service-nav-item">
-                    <i class="fas fa-file-contract"></i>Business Registration
+                <a href="#incident-response" class="service-nav-item">
+                    <i class="fas fa-exclamation-triangle incident-icon"></i>Incident Response
                 </a>
-                <a href="#mergers-acquisitions" class="service-nav-item">
-                    <i class="fas fa-handshake"></i>Mergers & Acquisitions
+                <a href="#data-breach" class="service-nav-item">
+                    <i class="fas fa-database data-icon"></i>Data Breach Management
                 </a>
-                <a href="#employment-law" class="service-nav-item">
-                    <i class="fas fa-briefcase"></i>Employment Law
-                </a>
-                <a href="#real-estate" class="service-nav-item">
-                    <i class="fas fa-home"></i>Real Estate
-                </a>
-                <a href="#immigration" class="service-nav-item">
-                    <i class="fas fa-passport"></i>Immigration Law
-                </a>
-                <a href="#energy-infrastructure" class="service-nav-item">
-                    <i class="fas fa-industry"></i>Energy & Infrastructure
-                </a>
-                <a href="#company-secretarial" class="service-nav-item">
-                    <i class="fas fa-clipboard-list"></i>Company Secretarial
+                <a href="#cyber-litigation" class="service-nav-item">
+                    <i class="fas fa-gavel litigation-icon"></i>Cyber Litigation
                 </a>
             </nav>
+            
+            <div class="cyber-stats">
+                <h4 style="color: white; margin-bottom: 20px;">Our Cybersecurity Stats</h4>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #4dabf7;">95%</div>
+                        <div style="font-size: 0.9rem;">Success Rate</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #4dabf7;">150+</div>
+                        <div style="font-size: 0.9rem;">Cyber Cases</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #4dabf7;">24/7</div>
+                        <div style="font-size: 0.9rem;">Response Team</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #4dabf7;">100+</div>
+                        <div style="font-size: 0.9rem;">Clients Protected</div>
+                    </div>
+                </div>
+            </div>
         </aside>
 
         <!-- Services Content -->
         <main class="services-content">
-            <!-- Dispute Resolution Section -->
-            <section id="dispute-resolution" class="service-section">
+            <!-- Cybersecurity Advisory Section -->
+            <section id="cybersecurity-advisory" class="service-section cyber">
                 <div class="service-header">
-                    <h2>Dispute Resolution & ADR</h2>
-                    <p>Strategic resolution of complex disputes through litigation, arbitration, and mediation</p>
+                    <h2>Cybersecurity Legal Advisory <span class="cyber-badge">Proactive Protection</span></h2>
+                    <p>Comprehensive legal strategies to fortify your digital defenses and minimize cyber risk exposure</p>
                 </div>
                 <div class="service-content">
                     <div class="service-grid">
                         <div class="service-info">
-                            <h3>Expert Dispute Resolution Services</h3>
+                            <h3>Strategic Cybersecurity Legal Framework</h3>
                             <p class="service-description">
-                                Our dispute resolution team specializes in navigating complex legal conflicts through multiple channels, ensuring efficient and favorable outcomes for our clients. We combine extensive courtroom experience with sophisticated alternative dispute resolution techniques.
+                                We develop robust legal frameworks to protect your organization from digital threats, ensuring compliance with Kenyan cybersecurity regulations while implementing proactive defense strategies against evolving cyber risks.
                             </p>
                             
                             <div class="service-features">
-                                <h4>Our Expertise Includes:</h4>
+                                <h4>Our Advisory Services:</h4>
                                 <ul class="features-list">
-                                    <li>Commercial and Civil Litigation</li>
-                                    <li>Arbitration and Mediation Services</li>
-                                    <li>Contract Disputes and Breach Claims</li>
-                                    <li>Professional Negligence Cases</li>
-                                    <li>Construction and Engineering Disputes</li>
-                                    <li>Insurance and Reinsurance Claims</li>
-                                    <li>International Commercial Arbitration</li>
-                                    <li>Debt Recovery and Enforcement</li>
-                                    <li>Shareholder and Partnership Disputes</li>
-                                    <li>Employment and Labor Disputes</li>
+                                    <li>Cybersecurity Policy Development & Implementation</li>
+                                    <li>Data Breach Prevention & Risk Assessment</li>
+                                    <li>Third-Party Vendor Risk Management</li>
+                                    <li>Cyber Insurance Policy Review & Negotiation</li>
+                                    <li>Incident Response Planning & Documentation</li>
+                                    <li>Security Compliance Audits</li>
+                                    <li>Employee Cybersecurity Training Programs</li>
+                                    <li>Cloud Security & SaaS Agreement Review</li>
+                                    <li>IoT Device Security Compliance</li>
+                                    <li>Mobile Application Security Assessments</li>
                                 </ul>
                             </div>
 
                             <div class="service-stats">
                                 <div class="service-stat">
-                                    <div class="service-stat-number">95%</div>
-                                    <div class="service-stat-label">Success Rate</div>
+                                    <div class="service-stat-number">50+</div>
+                                    <div class="service-stat-label">Policies Developed</div>
                                 </div>
                                 <div class="service-stat">
-                                    <div class="service-stat-number">500+</div>
-                                    <div class="service-stat-label">Cases Resolved</div>
+                                    <div class="service-stat-number">KES 500M+</div>
+                                    <div class="service-stat-label">Risk Mitigated</div>
                                 </div>
                                 <div class="service-stat">
-                                    <div class="service-stat-number">85%</div>
-                                    <div class="service-stat-label">Settled Out of Court</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">24h</div>
-                                    <div class="service-stat-label">Response Time</div>
+                                    <div class="service-stat-number">100%</div>
+                                    <div class="service-stat-label">Regulatory Compliance</div>
                                 </div>
                             </div>
 
                             <div class="service-actions">
                                 <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Schedule Consultation
+                                    <i class="fas fa-shield-alt"></i> Schedule Cyber Assessment
                                 </a>
                                 <a href="#contact" class="service-btn secondary">
-                                    <i class="fas fa-file-alt"></i> Download Brochure
+                                    <i class="fas fa-file-alt"></i> Download Cybersecurity Guide
                                 </a>
                             </div>
                         </div>
                         
                         <div class="service-visual">
                             <div class="service-icon">
-                                <i class="fas fa-balance-scale"></i>
+                                <i class="fas fa-shield-alt cyber-icon"></i>
                             </div>
                             <div class="process-section">
-                                <h4>Our Resolution Process</h4>
+                                <h4>Our Cybersecurity Process</h4>
                                 <div class="process-steps">
                                     <div class="process-step">
                                         <div class="step-number">1</div>
-                                        <div class="step-text">Case Evaluation & Strategy Development</div>
+                                        <div class="step-text">Risk Assessment & Gap Analysis</div>
                                     </div>
                                     <div class="process-step">
                                         <div class="step-number">2</div>
-                                        <div class="step-text">Evidence Gathering & Documentation</div>
+                                        <div class="step-text">Policy Development & Implementation</div>
                                     </div>
                                     <div class="process-step">
                                         <div class="step-number">3</div>
-                                        <div class="step-text">Negotiation & Settlement Attempts</div>
+                                        <div class="step-text">Employee Training & Awareness</div>
                                     </div>
                                     <div class="process-step">
                                         <div class="step-number">4</div>
-                                        <div class="step-text">Formal Proceedings if Necessary</div>
+                                        <div class="step-text">Ongoing Monitoring & Compliance</div>
                                     </div>
                                 </div>
                             </div>
@@ -211,561 +286,300 @@
                 </div>
             </section>
 
-            <!-- Corporate Law Section -->
-            <section id="corporate-law" class="service-section">
+            <!-- Digital Forensics Section -->
+            <section id="digital-forensics" class="service-section forensic">
                 <div class="service-header">
-                    <h2>Corporate & Commercial Law</h2>
-                    <p>Comprehensive legal solutions for businesses of all sizes</p>
+                    <h2>Digital Forensics & Investigations <span class="cyber-badge" style="background: rgba(25, 135, 84, 0.1); color: #198754;">Evidence Collection</span></h2>
+                    <p>Comprehensive digital evidence collection and analysis for legal proceedings and internal investigations</p>
                 </div>
                 <div class="service-content">
                     <div class="service-grid">
                         <div class="service-info">
-                            <h3>Strategic Corporate Legal Advisory</h3>
+                            <h3>Expert Digital Evidence Management</h3>
                             <p class="service-description">
-                                We provide end-to-end corporate legal services that empower businesses to operate efficiently, comply with regulations, and achieve their strategic objectives. Our expertise covers the entire business lifecycle from formation to dissolution.
+                                Our certified digital forensics team employs cutting-edge technology to collect, preserve, and analyze electronic evidence for litigation, regulatory compliance, and internal investigations while maintaining chain of custody integrity.
                             </p>
                             
                             <div class="service-features">
-                                <h4>Services Include:</h4>
+                                <h4>Forensic Services Include:</h4>
                                 <ul class="features-list">
-                                    <li>Corporate Governance and Compliance</li>
-                                    <li>Contract Drafting and Review</li>
-                                    <li>Shareholders' Agreements</li>
-                                    <li>Corporate Restructuring</li>
-                                    <li>Joint Ventures and Partnerships</li>
-                                    <li>Commercial Contracts</li>
-                                    <li>Regulatory Compliance Advisory</li>
-                                    <li>Corporate Secretarial Services</li>
-                                    <li>Directors' Duties and Responsibilities</li>
-                                    <li>Corporate Finance and Capital Raising</li>
+                                    <li>Digital Evidence Preservation & Chain of Custody</li>
+                                    <li>Computer & Mobile Device Forensics</li>
+                                    <li>Network Intrusion Analysis & Attribution</li>
+                                    <li>Employee Misconduct & Insider Threat Investigations</li>
+                                    <li>Expert Witness Testimony in Court</li>
+                                    <li>Social Media & Digital Communication Analysis</li>
+                                    <li>Cloud Storage & Server Forensics</li>
+                                    <li>Deleted Data Recovery & Analysis</li>
+                                    <li>Cryptocurrency Transaction Tracing</li>
+                                    <li>Forensic Report Preparation for Litigation</li>
                                 </ul>
                             </div>
 
                             <div class="service-stats">
                                 <div class="service-stat">
                                     <div class="service-stat-number">200+</div>
-                                    <div class="service-stat-label">Corporate Clients</div>
+                                    <div class="service-stat-label">Forensic Investigations</div>
                                 </div>
                                 <div class="service-stat">
-                                    <div class="service-stat-number">5+</div>
-                                    <div class="service-stat-label">Years Experience</div>
+                                    <div class="service-stat-number">98%</div>
+                                    <div class="service-stat-label">Evidence Admissibility Rate</div>
                                 </div>
                             </div>
 
                             <div class="service-actions">
                                 <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Get Corporate Advice
+                                    <i class="fas fa-search"></i> Request Forensic Analysis
                                 </a>
                                 <a href="#contact" class="service-btn secondary">
-                                    <i class="fas fa-download"></i> Service Details
+                                    <i class="fas fa-download"></i> Evidence Collection Guide
                                 </a>
                             </div>
                         </div>
                         
                         <div class="service-visual">
                             <div class="service-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="process-section">
-                                <h4>Corporate Services Process</h4>
-                                <div class="process-steps">
-                                    <div class="process-step">
-                                        <div class="step-number">1</div>
-                                        <div class="step-text">Business Needs Assessment</div>
-                                    </div>
-                                    <div class="process-step">
-                                        <div class="step-number">2</div>
-                                        <div class="step-text">Legal Structure Planning</div>
-                                    </div>
-                                    <div class="process-step">
-                                        <div class="step-number">3</div>
-                                        <div class="step-text">Document Preparation & Review</div>
-                                    </div>
-                                    <div class="process-step">
-                                        <div class="step-number">4</div>
-                                        <div class="step-text">Ongoing Compliance Support</div>
-                                    </div>
-                                </div>
+                                <i class="fas fa-search forensic-icon"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Banking & Finance Section -->
-            <section id="banking-finance" class="service-section">
+            <!-- Data Protection Compliance Section -->
+            <section id="data-protection" class="service-section compliance">
                 <div class="service-header">
-                    <h2>Banking & Finance Law</h2>
-                    <p>Expert legal counsel on financial transactions and regulatory compliance</p>
+                    <h2>Data Protection & Privacy Compliance <span class="cyber-badge" style="background: rgba(111, 66, 193, 0.1); color: #6f42c1;">GDPR & DPA Ready</span></h2>
+                    <p>Ensuring compliance with Kenya's Data Protection Act and international privacy regulations</p>
                 </div>
                 <div class="service-content">
                     <div class="service-grid">
                         <div class="service-info">
-                            <h3>Comprehensive Financial Legal Services</h3>
+                            <h3>Comprehensive Privacy Compliance Solutions</h3>
                             <p class="service-description">
-                                Our banking and finance practice provides sophisticated legal advice to financial institutions, corporations, and individuals on complex financial transactions, regulatory matters, and debt recovery strategies in the Kenyan market.
+                                We help organizations navigate the complex landscape of data protection laws, implementing compliant data processing practices and developing privacy frameworks that meet both local and international regulatory requirements.
                             </p>
                             
                             <div class="service-features">
-                                <h4>Key Services:</h4>
+                                <h4>Compliance Services:</h4>
                                 <ul class="features-list">
-                                    <li>Loan Agreements and Security Documentation</li>
-                                    <li>Regulatory Compliance and Licensing</li>
-                                    <li>Project Finance and Structured Finance</li>
-                                    <li>Debt Capital Markets</li>
-                                    <li>Asset Finance and Leasing</li>
-                                    <li>Financial Services Regulation</li>
-                                    <li>Debt Recovery and Enforcement</li>
-                                    <li>Fintech and Digital Banking</li>
-                                    <li>Syndicated Loans and Financing</li>
-                                    <li>Banking Litigation and Dispute Resolution</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">50+</div>
-                                    <div class="service-stat-label">Financial Institutions</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">KES 100M+</div>
-                                    <div class="service-stat-label">Transactions Handled</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Financial Consultation
-                                </a>
-                                <a href="#contact" class="service-btn secondary">
-                                    <i class="fas fa-file-contract"></i> View Sample Agreements
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-landmark"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Business Registration Section -->
-            <section id="business-registration" class="service-section">
-                <div class="service-header">
-                    <h2>Business Registration & Advisory</h2>
-                    <p>End-to-end business setup and regulatory compliance services</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Complete Business Formation Services</h3>
-                            <p class="service-description">
-                                We streamline the business registration process in Kenya, providing comprehensive support from entity selection to full operational compliance. Our team ensures your business starts on the right legal footing.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Our Registration Services:</h4>
-                                <ul class="features-list">
-                                    <li>Company Name Reservation and Registration</li>
-                                    <li>Business Structure Advisory (LLC, Partnership, Sole Proprietorship)</li>
-                                    <li>Tax Registration (KRA PIN, VAT, Withholding Tax)</li>
-                                    <li>Business Permits and Licenses</li>
-                                    <li>NGO and Society Registrations</li>
-                                    <li>Foreign Company Registration</li>
-                                    <li>Branch Office Establishment</li>
-                                    <li>Compliance and Regulatory Advisory</li>
-                                    <li>Post-Registration Support Services</li>
-                                    <li>Ongoing Compliance Monitoring</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">1000+</div>
-                                    <div class="service-stat-label">Businesses Registered</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">7-14</div>
-                                    <div class="service-stat-label">Days Average Processing</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Start Registration
-                                </a>
-                                <a href="contact.html" class="service-btn secondary">
-                                    <i class="fas fa-download"></i> Requirements Checklist
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-file-contract"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mergers & Acquisitions Section -->
-            <section id="mergers-acquisitions" class="service-section">
-                <div class="service-header">
-                    <h2>Mergers & Acquisitions</h2>
-                    <p>Strategic guidance through all M&A transaction phases</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Comprehensive M&A Legal Advisory</h3>
-                            <p class="service-description">
-                                Our M&A practice provides end-to-end legal support for mergers, acquisitions, and corporate restructuring transactions. We guide clients through complex deals with strategic insight and meticulous attention to detail.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>M&A Services Include:</h4>
-                                <ul class="features-list">
-                                    <li>Due Diligence and Risk Assessment</li>
-                                    <li>Transaction Structuring and Planning</li>
-                                    <li>Share Purchase Agreements</li>
-                                    <li>Asset Purchase Agreements</li>
-                                    <li>Merger Documentation and Filings</li>
-                                    <li>Regulatory Approvals and Compliance</li>
-                                    <li>Post-Merger Integration Support</li>
-                                    <li>Competition Law Compliance</li>
-                                    <li>Cross-Border Transaction Support</li>
-                                    <li>Employee Transfer and Benefits Planning</li>
+                                    <li>Data Protection Act (Kenya) Compliance Programs</li>
+                                    <li>GDPR Readiness & Implementation</li>
+                                    <li>Privacy Impact Assessments & Audits</li>
+                                    <li>Data Processing Agreement Drafting & Review</li>
+                                    <li>Cross-Border Data Transfer Solutions</li>
+                                    <li>Data Protection Officer (DPO) Services</li>
+                                    <li>Cookie Compliance & Consent Management</li>
+                                    <li>Vendor Privacy Risk Assessments</li>
+                                    <li>Data Subject Rights Management</li>
+                                    <li>Privacy Policy Development & Review</li>
                                 </ul>
                             </div>
 
                             <div class="service-stats">
                                 <div class="service-stat">
                                     <div class="service-stat-number">75+</div>
-                                    <div class="service-stat-label">M&A Transactions</div>
+                                    <div class="service-stat-label">Compliance Projects</div>
                                 </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">KES 50M+</div>
-                                    <div class="service-stat-label">Deal Value Managed</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Discuss Your Deal
-                                </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-chart-line"></i> M&A Market Insights
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Employment Law Section -->
-            <section id="employment-law" class="service-section">
-                <div class="service-header">
-                    <h2>Employment & Labour Law</h2>
-                    <p>Comprehensive workplace solutions and compliance</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Workplace Legal Solutions</h3>
-                            <p class="service-description">
-                                We provide strategic employment law advice to employers and employees, ensuring compliance with Kenyan labor laws while fostering productive and legally sound workplace relationships.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Employment Law Services:</h4>
-                                <ul class="features-list">
-                                    <li>Employment Contract Drafting and Review</li>
-                                    <li>Workplace Policies and Procedures</li>
-                                    <li>Employee Discipline and Termination</li>
-                                    <li>Labor Dispute Resolution</li>
-                                    <li>Workplace Health and Safety Compliance</li>
-                                    <li>Employee Benefits and Compensation</li>
-                                    <li>Collective Bargaining Agreements</li>
-                                    <li>Workplace Investigations</li>
-                                    <li>Employment Due Diligence</li>
-                                    <li>Training and Compliance Workshops</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">300+</div>
-                                    <div class="service-stat-label">Employment Cases</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">95%</div>
-                                    <div class="service-stat-label">Compliance Success Rate</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Employment Consultation
-                                </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-users"></i> HR Compliance Audit
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Real Estate Section -->
-            <section id="real-estate" class="service-section">
-                <div class="service-header">
-                    <h2>Real Estate & Property Law</h2>
-                    <p>Expert handling of property transactions and development projects</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Comprehensive Real Estate Legal Services</h3>
-                            <p class="service-description">
-                                Our real estate practice covers the full spectrum of property law, from residential transactions to complex commercial developments, ensuring secure and legally sound property investments.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Real Estate Services:</h4>
-                                <ul class="features-list">
-                                    <li>Property Conveyancing and Transfers</li>
-                                    <li>Title Due Diligence and Verification</li>
-                                    <li>Commercial and Residential Leases</li>
-                                    <li>Property Development Agreements</li>
-                                    <li>Construction Contracts and Disputes</li>
-                                    <li>Mortgage and Security Documentation</li>
-                                    <li>Landlord-Tenant Dispute Resolution</li>
-                                    <li>Real Estate Financing</li>
-                                    <li>Property Management Agreements</li>
-                                    <li>Zoning and Land Use Compliance</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">KES 200M+</div>
-                                    <div class="service-stat-label">Property Value Handled</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">1500+</div>
-                                    <div class="service-stat-label">Property Transactions</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Property Consultation
-                                </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-home"></i> Conveyancing Quote
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Immigration Section -->
-            <section id="immigration" class="service-section">
-                <div class="service-header">
-                    <h2>Immigration Services</h2>
-                    <p>Comprehensive immigration support for individuals and businesses</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Expert Immigration Legal Support</h3>
-                            <p class="service-description">
-                                We provide comprehensive immigration services for individuals, families, and businesses seeking to navigate Kenya's immigration system for work, residence, investment, or family purposes.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Immigration Services:</h4>
-                                <ul class="features-list">
-                                    <li>Work Permits and Special Passes</li>
-                                    <li>Dependent Pass Applications</li>
-                                    <li>Business Visas and Entry Permits</li>
-                                    <li>Permanent Residence Applications</li>
-                                    <li>Citizenship and Naturalization</li>
-                                    <li>Corporate Immigration Compliance</li>
-                                    <li>Immigration Due Diligence</li>
-                                    <li>Appeal and Review Proceedings</li>
-                                    <li>Compliance Audits for Employers</li>
-                                    <li>Expatriate Tax and Compliance Advisory</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">98%</div>
-                                    <div class="service-stat-label">Application Success Rate</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">2000+</div>
-                                    <div class="service-stat-label">Applications Processed</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Immigration Consultation
-                                </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-passport"></i> Requirements Guide
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-passport"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Energy & Infrastructure Section -->
-            <section id="energy-infrastructure" class="service-section">
-                <div class="service-header">
-                    <h2>Energy & Infrastructure</h2>
-                    <p>Specialized legal support for major projects and regulatory compliance</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Energy and Infrastructure Legal Expertise</h3>
-                            <p class="service-description">
-                                Our team provides specialized legal counsel for energy projects, infrastructure development, and natural resource management, navigating complex regulatory frameworks and project financing structures.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Energy & Infrastructure Services:</h4>
-                                <ul class="features-list">
-                                    <li>Power Purchase Agreements (PPAs)</li>
-                                    <li>Renewable Energy Project Development</li>
-                                    <li>Oil and Gas Licensing and Compliance</li>
-                                    <li>Mining and Mineral Rights</li>
-                                    <li>Infrastructure Project Financing</li>
-                                    <li>Environmental Compliance and Permitting</li>
-                                    <li>Public-Private Partnerships (PPPs)</li>
-                                    <li>Construction and Engineering Contracts</li>
-                                    <li>Regulatory Compliance Advisory</li>
-                                    <li>Project Development Agreements</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
-                                <div class="service-stat">
-                                    <div class="service-stat-number">50+</div>
-                                    <div class="service-stat-label">Major Projects</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">KES 300M+</div>
-                                    <div class="service-stat-label">Project Value</div>
-                                </div>
-                            </div>
-
-                            <div class="service-actions">
-                                <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Project Consultation
-                                </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-bolt"></i> Energy Sector Report
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="service-visual">
-                            <div class="service-icon">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Company Secretarial Section -->
-            <section id="company-secretarial" class="service-section">
-                <div class="service-header">
-                    <h2>Company Secretarial Services</h2>
-                    <p>Professional corporate governance and compliance support</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-grid">
-                        <div class="service-info">
-                            <h3>Comprehensive Corporate Governance Support</h3>
-                            <p class="service-description">
-                                We provide professional company secretarial services that ensure your business maintains proper corporate governance, statutory compliance, and effective board administration.
-                            </p>
-                            
-                            <div class="service-features">
-                                <h4>Secretarial Services Include:</h4>
-                                <ul class="features-list">
-                                    <li>Company Registration and Incorporation</li>
-                                    <li>Annual Returns and Statutory Filings</li>
-                                    <li>Board Meeting Minutes and Resolutions</li>
-                                    <li>Share Transfers and Capital Changes</li>
-                                    <li>Corporate Governance Advisory</li>
-                                    <li>Compliance Monitoring and Reporting</li>
-                                    <li>Directors' and Officers' Duties Guidance</li>
-                                    <li>Company Restructuring and Winding Up</li>
-                                    <li>Registered Office Services</li>
-                                    <li>Corporate Records Maintenance</li>
-                                </ul>
-                            </div>
-
-                            <div class="service-stats">
                                 <div class="service-stat">
                                     <div class="service-stat-number">100%</div>
-                                    <div class="service-stat-label">Compliance Rate</div>
-                                </div>
-                                <div class="service-stat">
-                                    <div class="service-stat-number">5100+</div>
-                                    <div class="service-stat-label">Companies Served</div>
+                                    <div class="service-stat-label">Audit Success Rate</div>
                                 </div>
                             </div>
 
                             <div class="service-actions">
                                 <a href="consult.html" class="service-btn primary">
-                                    <i class="fas fa-calendar-check"></i> Secretarial Consultation
+                                    <i class="fas fa-clipboard-check"></i> Schedule Compliance Audit
                                 </a>
-                                <a href="consult.html" class="service-btn secondary">
-                                    <i class="fas fa-clipboard-check"></i> Compliance Audit
+                                <a href="#contact" class="service-btn secondary">
+                                    <i class="fas fa-file-contract"></i> View Compliance Templates
                                 </a>
                             </div>
                         </div>
                         
                         <div class="service-visual">
                             <div class="service-icon">
-                                <i class="fas fa-clipboard-list"></i>
+                                <i class="fas fa-clipboard-check compliance-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Incident Response Section -->
+            <section id="incident-response" class="service-section incident">
+                <div class="service-header">
+                    <h2>Cyber Incident Response <span class="cyber-badge" style="background: rgba(253, 126, 20, 0.1); color: #fd7e14;">24/7 Emergency</span></h2>
+                    <p>Immediate legal and technical response to cybersecurity incidents and breaches</p>
+                </div>
+                <div class="service-content">
+                    <div class="service-grid">
+                        <div class="service-info">
+                            <h3>Rapid Response Cyber Crisis Management</h3>
+                            <p class="service-description">
+                                Our 24/7 incident response team provides immediate legal and technical support during cybersecurity crises, minimizing damage, preserving evidence, and ensuring regulatory compliance throughout the recovery process.
+                            </p>
+                            
+                            <div class="service-features">
+                                <h4>Incident Response Services:</h4>
+                                <ul class="features-list">
+                                    <li>24/7 Emergency Incident Response Hotline</li>
+                                    <li>Ransomware Attack Response & Negotiation</li>
+                                    <li>Business Email Compromise Recovery</li>
+                                    <li>Data Breach Containment & Investigation</li>
+                                    <li>Regulatory Notification Management</li>
+                                    <li>Third-Party Breach Impact Assessment</li>
+                                    <li>Crisis Communication Strategy Development</li>
+                                    <li>Post-Incident Recovery Planning</li>
+                                    <li>Insurance Claim Assistance</li>
+                                    <li>Litigation Preparedness & Evidence Preservation</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-stats">
+                                <div class="service-stat">
+                                    <div class="service-stat-number">60+</div>
+                                    <div class="service-stat-label">Incidents Handled</div>
+                                </div>
+                                <div class="service-stat">
+                                    <div class="service-stat-number">2h</div>
+                                    <div class="service-stat-label">Average Response Time</div>
+                                </div>
+                            </div>
+
+                            <div class="service-actions">
+                                <a href="tel:+254723565739" class="service-btn primary">
+                                    <i class="fas fa-phone"></i> Emergency Hotline: +254-723-565-739
+                                </a>
+                                <a href="consult.html" class="service-btn secondary">
+                                    <i class="fas fa-exclamation-triangle"></i> Incident Response Plan
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-visual">
+                            <div class="service-icon">
+                                <i class="fas fa-exclamation-triangle incident-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Breach Management Section -->
+            <section id="data-breach" class="service-section data">
+                <div class="service-header">
+                    <h2>Data Breach Management <span class="cyber-badge" style="background: rgba(32, 201, 151, 0.1); color: #20c997;">Proactive Recovery</span></h2>
+                    <p>Comprehensive legal management of data breaches from discovery to resolution</p>
+                </div>
+                <div class="service-content">
+                    <div class="service-grid">
+                        <div class="service-info">
+                            <h3>End-to-End Breach Management</h3>
+                            <p class="service-description">
+                                We provide complete legal management of data breaches, ensuring compliance with notification requirements, managing stakeholder communications, and minimizing legal exposure while facilitating business recovery.
+                            </p>
+                            
+                            <div class="service-features">
+                                <h4>Breach Management Services:</h4>
+                                <ul class="features-list">
+                                    <li>Data Breach Notification Compliance (ODPC, GDPR)</li>
+                                    <li>Stakeholder Communication Strategy</li>
+                                    <li>Class Action Litigation Prevention</li>
+                                    <li>Regulatory Investigation Response</li>
+                                    <li>Breach Cost Mitigation & Recovery</li>
+                                    <li>Credit Monitoring & Identity Theft Services</li>
+                                    <li>Post-Breach Regulatory Compliance</li>
+                                    <li>Insurance Coordination & Claim Management</li>
+                                    <li>Breach Response Plan Development</li>
+                                    <li>Third-Party Liability Assessment</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-stats">
+                                <div class="service-stat">
+                                    <div class="service-stat-number">40+</div>
+                                    <div class="service-stat-label">Breaches Managed</div>
+                                </div>
+                                <div class="service-stat">
+                                    <div class="service-stat-number">KES 200M+</div>
+                                    <div class="service-stat-label">Fines Mitigated</div>
+                                </div>
+                            </div>
+
+                            <div class="service-actions">
+                                <a href="consult.html" class="service-btn primary">
+                                    <i class="fas fa-database"></i> Breach Assessment Consultation
+                                </a>
+                                <a href="#contact" class="service-btn secondary">
+                                    <i class="fas fa-chart-line"></i> Breach Response Toolkit
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-visual">
+                            <div class="service-icon">
+                                <i class="fas fa-database data-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cyber Litigation Section -->
+            <section id="cyber-litigation" class="service-section litigation">
+                <div class="service-header">
+                    <h2>Cyber Litigation & Dispute Resolution <span class="cyber-badge" style="background: rgba(220, 53, 69, 0.1); color: #dc3545;">Courtroom Ready</span></h2>
+                    <p>Expert representation in technology-related disputes and cybercrime litigation</p>
+                </div>
+                <div class="service-content">
+                    <div class="service-grid">
+                        <div class="service-info">
+                            <h3>Specialized Cyber Law Litigation</h3>
+                            <p class="service-description">
+                                Our experienced cyber litigation team represents clients in complex technology disputes, cybercrime cases, and regulatory enforcement actions, combining deep technical knowledge with proven legal advocacy.
+                            </p>
+                            
+                            <div class="service-features">
+                                <h4>Litigation Services:</h4>
+                                <ul class="features-list">
+                                    <li>Cybercrime Prosecution & Defense</li>
+                                    <li>Technology Contract Disputes</li>
+                                    <li>Intellectual Property Cyber Theft Cases</li>
+                                    <li>Regulatory Enforcement Defense</li>
+                                    <li>Class Action Defense in Data Breaches</li>
+                                    <li>Alternative Dispute Resolution for Tech Disputes</li>
+                                    <li>Expert Witness Selection & Management</li>
+                                    <li>Digital Evidence Admissibility Challenges</li>
+                                    <li>Appellate Practice in Cyber Cases</li>
+                                    <li>Cross-Border Cyber Litigation</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-stats">
+                                <div class="service-stat">
+                                    <div class="service-stat-number">90%</div>
+                                    <div class="service-stat-label">Success Rate</div>
+                                </div>
+                                <div class="service-stat">
+                                    <div class="service-stat-number">120+</div>
+                                    <div class="service-stat-label">Cyber Cases Handled</div>
+                                </div>
+                            </div>
+
+                            <div class="service-actions">
+                                <a href="consult.html" class="service-btn primary">
+                                    <i class="fas fa-gavel"></i> Schedule Litigation Consultation
+                                </a>
+                                <a href="#contact" class="service-btn secondary">
+                                    <i class="fas fa-balance-scale"></i> Case Strategy Review
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-visual">
+                            <div class="service-icon">
+                                <i class="fas fa-gavel litigation-icon"></i>
                             </div>
                         </div>
                     </div>
@@ -774,17 +588,17 @@
         </main>
     </div>
 
-    <!-- CTA Section -->
+    <!-- Cybersecurity CTA Section -->
     <section class="services-cta">
         <div class="cta-content">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today to discuss your legal needs and discover how our comprehensive services can help you achieve your objectives with confidence and peace of mind.</p>
+            <h2>Protect Your Digital Assets Today</h2>
+            <p>In today's digital landscape, proactive cybersecurity legal protection is not optional—it's essential. Contact us to secure your organization against evolving cyber threats and ensure regulatory compliance.</p>
             <div class="service-actions" style="justify-content: center;">
                 <a href="contact.html" class="service-btn primary">
-                    <i class="fas fa-phone"></i> Contact Us Now
+                    <i class="fas fa-shield-alt"></i> Schedule Cyber Risk Assessment
                 </a>
-                <a href="tel:254723565739" class="service-btn secondary">
-                    <i class="fas fa-mobile-alt"></i> Call Directly
+                <a href="tel:+254723565739" class="service-btn secondary">
+                    <i class="fas fa-phone"></i> 24/7 Cyber Emergency Line
                 </a>
             </div>
         </div>
@@ -797,7 +611,7 @@
 
     <script src="index.js"></script>
     <script>
-        // Services Page Specific JavaScript
+        // Cybersecurity Services Page Specific JavaScript
         document.addEventListener('DOMContentLoaded', function() {
             // Smooth scrolling for service navigation
             const serviceNavItems = document.querySelectorAll('.service-nav-item');
@@ -866,9 +680,17 @@
             serviceSections.forEach(section => {
                 observer.observe(section);
             });
+            
+            // Emergency hotline click tracking
+            const emergencyLinks = document.querySelectorAll('a[href*="tel:+254723565739"]');
+            emergencyLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // You can add analytics tracking here
+                    console.log('Emergency hotline clicked');
+                });
+            });
         });
     </script>
-     <script src="index.js"></script>
     <footer>
         <footer class="main-footer">
     <div class="footer-content">
@@ -880,11 +702,11 @@
                     <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="footer-logo-img">
                     <div class="logo-text">
                         <h3>Keniz Agira & Company Advocates</h3>
-                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                        <p>Cybersecurity & Digital Forensics Legal Specialists</p>
                     </div>
                 </div>
                 <p class="footer-description">
-                    For years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                    Kenya's premier legal firm specializing in cybersecurity law, digital forensics, and data protection compliance. We protect your digital assets with expert legal solutions.
                 </p>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">
@@ -899,35 +721,31 @@
                     <a href="#" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
                 </div>
             </div>
 
             <!-- Quick Links -->
             <div class="footer-section">
-                <h4>Quick Links</h4>
+                <h4>Cyber Services</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
-                    <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
-                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="services.html#cybersecurity-advisory"><i class="fas fa-shield-alt"></i> Cybersecurity Advisory</a></li>
+                    <li><a href="services.html#digital-forensics"><i class="fas fa-search"></i> Digital Forensics</a></li>
+                    <li><a href="services.html#data-protection"><i class="fas fa-clipboard-check"></i> Data Protection Compliance</a></li>
+                    <li><a href="services.html#incident-response"><i class="fas fa-exclamation-triangle"></i> Incident Response</a></li>
+                    <li><a href="services.html#data-breach"><i class="fas fa-database"></i> Data Breach Management</a></li>
+                    <li><a href="services.html#cyber-litigation"><i class="fas fa-gavel"></i> Cyber Litigation</a></li>
                 </ul>
             </div>
 
             <!-- Practice Areas -->
             <div class="footer-section">
-                <h4>Practice Areas</h4>
+                <h4>Quick Links</h4>
                 <ul class="footer-links">
-                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
-                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
-                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
-                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
-                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
-                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Cybersecurity Services</a></li>
+                    <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                 </ul>
             </div>
 
@@ -946,21 +764,21 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Phone Numbers</strong>
-                            <p>+254-723-565-739<br>+254-711-000-000</p>
+                            <p>+254-723-565-739 (24/7 Cyber Emergency)<br>+254-711-000-000 (General Inquiries)</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email Address</strong>
-                            <p>info@kenizagira&companyadvocates.com<br>consult@kenizagira&companyadvocates.com</p>
+                            <p>cyber@kenizagira&companyadvocates.com<br>consult@kenizagira&companyadvocates.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <strong>Business Hours</strong>
-                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Cyber Emergency: 24/7</p>
                         </div>
                     </div>
                 </div>
@@ -971,8 +789,8 @@
         <div class="newsletter-section">
             <div class="newsletter-content">
                 <div class="newsletter-text">
-                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
-                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                    <h4><i class="fas fa-shield-alt"></i> Stay Cyber Secure</h4>
+                    <p>Subscribe for cybersecurity legal updates, breach alerts, and compliance insights</p>
                 </div>
                 <form class="newsletter-form">
                     <div class="input-group">

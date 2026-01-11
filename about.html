@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Keniz Agira & Company Advocates</title>
+    <title>About Us - Cybersecurity & Digital Forensics Legal Specialists | Keniz Agira & Company Advocates</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
      <link rel="stylesheet" href="about.css">
+     <style>
+        /* Cybersecurity theme overrides for about page */
+        :root {
+            --cyber-primary: #1a3a6c;
+            --cyber-secondary: #0d6efd;
+            --cyber-accent: #dc3545;
+            --cyber-success: #198754;
+            --cyber-warning: #fd7e14;
+            --cyber-dark: #1a1a1a;
+            --cyber-light: #f8f9fa;
+        }
+        
+        .cyber-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+     </style>
 </head>
 <body>
     <!-- Desktop Header with Logo and Navigation -->
@@ -18,8 +41,8 @@
         <nav class="navbar">
             <ul class="nav-links">
                  <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Cybersecurity Services</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -66,8 +89,8 @@
         </button>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="services.html">Practice Areas</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Cybersecurity Services</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -76,25 +99,25 @@
     <!-- About Hero Section -->
     <section class="about-hero">
         <div class="about-hero-content">
-            <h1>Our Legacy of Excellence</h1>
-            <p>For a decade, Keniz Agira & Company Advocates has been at the forefront of legal innovation and client service excellence in Kenya and beyond. Our journey is defined by unwavering commitment to justice, integrity, and exceptional legal representation.</p>
+            <h1>Cybersecurity & Digital Forensics Legal Specialists</h1>
+            <p>Keniz Agira & Company Advocates is Kenya's premier legal firm specializing exclusively in cybersecurity law, digital forensics, and data protection. Our team combines deep legal expertise with technical understanding to protect organizations from digital threats in today's evolving cyber landscape.</p>
             
             <div class="hero-stats">
                 <div class="hero-stat">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Years of Excellence</div>
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Cybersecurity Case Success</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Cases Handled</div>
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Digital Investigations</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Client Satisfaction</div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Incident Response</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Practice Areas</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Regulatory Compliance</div>
                 </div>
             </div>
         </div>
@@ -105,11 +128,11 @@
         <div class="mv-container">
             <div class="mv-card">
                 <div class="mv-icon">
-                    <i class="fas fa-bullseye"></i>
+                    <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Our Mission</h3>
                 <p>
-                    To provide exceptional legal services that empower our clients to achieve their objectives while upholding the highest standards of professionalism, integrity, and ethical practice. We are committed to delivering innovative legal solutions that drive success and foster long-term relationships built on trust and mutual respect.
+                    To provide cutting-edge legal solutions that protect organizations from digital threats while ensuring compliance with cybersecurity regulations. We empower businesses to navigate the complex digital landscape with confidence, safeguarding their assets, reputation, and customer trust through proactive legal strategies and rapid incident response.
                 </p>
             </div>
 
@@ -119,7 +142,7 @@
                 </div>
                 <h3>Our Vision</h3>
                 <p>
-                    To be the leading law firm in East Africa, recognized for our unwavering commitment to legal excellence, client success, and positive impact on the communities we serve. We aspire to set the standard for legal practice through innovation, collaboration, and relentless pursuit of justice.
+                    To be East Africa's leading cybersecurity legal practice, recognized for innovative digital protection strategies, expert digital forensics capabilities, and comprehensive data protection compliance. We aim to set the standard for cybersecurity legal services while building a safer digital ecosystem for businesses and individuals.
                 </p>
             </div>
         </div>
@@ -128,8 +151,8 @@
     <!-- History Timeline Section -->
     <section class="history-section">
         <div class="section-header">
-            <h2>Our Journey Through Time</h2>
-            <p>Two decades of growth, excellence, and unwavering commitment to legal practice</p>
+            <h2>Our Cybersecurity Journey</h2>
+            <p>Specializing in digital protection and evolving with the cyber threat landscape</p>
         </div>
 
         <div class="timeline">
@@ -137,8 +160,8 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-year">2020</div>
-                    <h3>Foundation & Establishment</h3>
-                    <p>Keniz Agira & Company Advocates was founded with a vision to provide comprehensive legal services. Started with a small team of dedicated lawyers focusing on corporate and commercial law, quickly establishing a reputation for excellence.</p>
+                    <h3>Cybersecurity Specialization Begins</h3>
+                    <p>Recognizing the growing digital threat landscape, we established Kenya's first dedicated cybersecurity legal practice. Focused initially on data protection compliance and basic digital risk management for corporate clients.</p>
                 </div>
             </div>
 
@@ -146,8 +169,8 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-year">2022</div>
-                    <h3>Expansion & Growth</h3>
-                    <p>Expanded our practice areas to include litigation, real estate, and intellectual property. Opened our second office location and grew our team to 15 legal professionals, serving an increasingly diverse client base.</p>
+                    <h3>Digital Forensics Expansion</h3>
+                    <p>Added certified digital forensics capabilities and established partnerships with cybersecurity technology firms. Expanded services to include incident response, digital evidence preservation, and cybercrime investigation support.</p>
                 </div>
             </div>
 
@@ -155,8 +178,8 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-year">2023</div>
-                    <h3>Regional Recognition</h3>
-                    <p>Recognized as one of Kenya's leading full-service law firms. Received multiple awards for legal excellence and expanded our international practice, serving clients across East Africa and beyond.</p>
+                    <h3>Industry Recognition & Growth</h3>
+                    <p>Recognized as Kenya's leading cybersecurity law firm. Received awards for digital forensics excellence and expanded team to include specialized cyber litigation attorneys and data protection compliance experts.</p>
                 </div>
             </div>
 
@@ -164,8 +187,8 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-year">2024</div>
-                    <h3>Digital Transformation</h3>
-                    <p>Implemented comprehensive digital solutions to enhance client service delivery. Launched virtual consultation services and advanced case management systems, ensuring seamless service during global challenges.</p>
+                    <h3>Advanced Cyber Capabilities</h3>
+                    <p>Implemented 24/7 cyber incident response center and advanced threat intelligence capabilities. Expanded services to include ransomware negotiation support, cryptocurrency transaction tracing, and advanced persistent threat (APT) investigation.</p>
                 </div>
             </div>
 
@@ -173,18 +196,18 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-year">2025</div>
-                    <h3>Future Forward</h3>
-                    <p>Continuing our legacy of excellence with expanded practice areas in technology law, environmental compliance, and international arbitration. Committed to innovation and maintaining our position as legal industry leaders.</p>
+                    <h3>Future-Ready Cybersecurity</h3>
+                    <p>Leading innovation in AI-powered threat detection legal frameworks, quantum computing security protocols, and IoT device compliance. Expanding regional presence while maintaining focus on cutting-edge cybersecurity legal solutions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Values Section -->
-    <section class="values-section">
+    <section class="values-section" style="background: linear-gradient(135deg, var(--cyber-primary) 0%, var(--cyber-dark) 100%);">
         <div class="section-header">
-            <h2 style="color: white;">Our Core Values</h2>
-            <p style="color: rgba(255, 255, 255, 0.8);">The principles that guide every aspect of our practice</p>
+            <h2 style="color: white;">Our Cybersecurity Values</h2>
+            <p style="color: rgba(255, 255, 255, 0.8);">Principles that guide our digital protection practice</p>
         </div>
 
         <div class="values-grid">
@@ -193,44 +216,44 @@
                 <div class="value-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h3>Integrity</h3>
-                <p>We maintain the highest ethical standards in all our dealings, ensuring transparency, honesty, and unwavering commitment to doing what is right.</p>
+                <h3>Proactive Protection</h3>
+                <p>We believe in preventing cyber incidents before they occur through comprehensive risk assessments, robust security policies, and continuous monitoring strategies.</p>
             </div>
 
             <!-- Value 2 -->
             <div class="value-card">
                 <div class="value-icon">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-search"></i>
                 </div>
-                <h3>Excellence</h3>
-                <p>We strive for perfection in every case, continuously improving our skills and approaches to deliver outstanding legal solutions.</p>
+                <h3>Digital Integrity</h3>
+                <p>Maintaining chain of custody for digital evidence, ensuring data authenticity, and preserving evidentiary integrity throughout investigations and legal proceedings.</p>
             </div>
 
             <!-- Value 3 -->
             <div class="value-card">
                 <div class="value-icon">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-lock"></i>
                 </div>
-                <h3>Collaboration</h3>
-                <p>We believe in the power of teamwork, working closely with clients and colleagues to achieve the best possible outcomes.</p>
+                <h3>Data Confidentiality</h3>
+                <p>Implementing the highest standards of data protection, ensuring client information remains secure and confidential throughout all legal processes and investigations.</p>
             </div>
 
             <!-- Value 4 -->
             <div class="value-card">
                 <div class="value-icon">
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-bolt"></i>
                 </div>
-                <h3>Client Focus</h3>
-                <p>Our clients' success is our success. We listen carefully, understand deeply, and deliver solutions that exceed expectations.</p>
+                <h3>Rapid Response</h3>
+                <p>Providing immediate legal support during cybersecurity incidents to minimize damage, preserve evidence, and ensure regulatory compliance under pressure.</p>
             </div>
 
             <!-- Value 5 -->
             <div class="value-card">
                 <div class="value-icon">
-                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-code"></i>
                 </div>
-                <h3>Innovation</h3>
-                <p>We embrace new technologies and creative approaches to solve complex legal challenges and stay ahead of industry trends.</p>
+                <h3>Technical Expertise</h3>
+                <p>Combining legal knowledge with deep technical understanding of cybersecurity frameworks, digital forensics tools, and emerging threat vectors.</p>
             </div>
 
             <!-- Value 6 -->
@@ -238,8 +261,8 @@
                 <div class="value-icon">
                     <i class="fas fa-handshake"></i>
                 </div>
-                <h3>Trust</h3>
-                <p>We build lasting relationships based on reliability, confidentiality, and consistent delivery of exceptional results.</p>
+                <h3>Collaborative Security</h3>
+                <p>Working closely with clients, cybersecurity partners, and regulatory bodies to develop comprehensive protection strategies and share threat intelligence.</p>
             </div>
         </div>
     </section>
@@ -247,72 +270,139 @@
     <!-- Leadership Team Section -->
     <section class="leadership-section">
         <div class="section-header">
-            <h2>Our Leadership Team</h2>
-            <p>Experienced legal professionals dedicated to guiding our firm and serving our clients</p>
+            <h2>Our Cybersecurity Leadership</h2>
+            <p>Specialized legal professionals with deep expertise in digital protection</p>
         </div>
 
         <div class="team-grid">
             <!-- Leader 1 -->
             <div class="leader-card">
-                <div class="leader-image">KA</div>
+                <div class="leader-image">
+                    <div class="cyber-leader-badge">Cybersecurity Lead</div>
+                </div>
                 <div class="leader-info">
-                    <h3>Keniz Agira</h3>
-                    <p class="leader-role">Managing Partner & Senior Advocate</p>
+                    <h3>Keniz Agira <span class="cyber-badge">Certified Digital Forensics Examiner</span></h3>
+                    <p class="leader-role">Managing Partner & Cybersecurity Law Specialist</p>
                     <p class="leader-bio">
-                        With over 5 years of legal practice, Keniz brings exceptional expertise in corporate law and dispute resolution. His strategic leadership has guided numerous clients through complex legal challenges to successful outcomes.
+                        With extensive experience in cybersecurity law and digital forensics, Keniz leads our specialized practice. Certified in multiple digital forensics methodologies, he provides strategic guidance on data protection compliance, incident response, and cyber litigation for organizations across sectors.
                     </p>
                     <div class="leader-expertise">
-                        <span class="expertise-tag">Corporate Law</span>
-                        <span class="expertise-tag">Dispute Resolution</span>
-                        <span class="expertise-tag">M&A</span>
+                        <span class="expertise-tag">Cybersecurity Law</span>
+                        <span class="expertise-tag">Digital Forensics</span>
+                        <span class="expertise-tag">Data Protection</span>
+                        <span class="expertise-tag">Incident Response</span>
                     </div>
                 </div>
             </div>
 
             <!-- Leader 2 -->
             <div class="leader-card">
-                <div class="leader-image">TM</div>
+                <div class="leader-image">
+                    <div class="cyber-leader-badge">Digital Forensics Lead</div>
+                </div>
                 <div class="leader-info">
-                    <h3>Team Member 1</h3>
-                    <p class="leader-role">Senior Partner - Litigation & Real Estate</p>
+                    <h3>Digital Forensics Team <span class="cyber-badge">CFCE Certified</span></h3>
+                    <p class="leader-role">Senior Digital Forensics & Incident Response Specialists</p>
                     <p class="leader-bio">
-                        Team Member 1 specializes in civil litigation and real estate law with 5 years of courtroom experience. Her meticulous approach and persuasive advocacy have secured favorable judgments for clients across various sectors.
+                        Our digital forensics team brings technical expertise in evidence collection, preservation, and analysis. Certified in computer forensics, mobile device examination, and network intrusion analysis, they ensure digital evidence meets legal standards for admissibility in Kenyan courts.
                     </p>
                     <div class="leader-expertise">
-                        <span class="expertise-tag">Civil Litigation</span>
-                        <span class="expertise-tag">Real Estate</span>
-                        <span class="expertise-tag">Property Law</span>
+                        <span class="expertise-tag">Digital Evidence</span>
+                        <span class="expertise-tag">Network Forensics</span>
+                        <span class="expertise-tag">Mobile Forensics</span>
+                        <span class="expertise-tag">Malware Analysis</span>
                     </div>
                 </div>
             </div>
 
             <!-- Leader 3 -->
             <div class="leader-card">
-                <div class="leader-image">TM</div>
+                <div class="leader-image">
+                    <div class="cyber-leader-badge">Compliance Lead</div>
+                </div>
                 <div class="leader-info">
-                    <h3>Team Member 2</h3>
-                    <p class="leader-role">Partner - Commercial & Intellectual Property</p>
+                    <h3>Compliance & Privacy Team <span class="cyber-badge">CIPP/E Certified</span></h3>
+                    <p class="leader-role">Data Protection & Regulatory Compliance Specialists</p>
                     <p class="leader-bio">
-                        Team Member 2 brings 5 years of expertise in commercial transactions and intellectual property law. His innovative approach to business law has helped numerous enterprises protect their assets and grow sustainably.
+                        Specializing in data protection law, our compliance team ensures organizations meet Kenya's Data Protection Act requirements and international privacy standards. Expertise includes GDPR compliance, privacy impact assessments, and regulatory investigation response.
                     </p>
                     <div class="leader-expertise">
-                        <span class="expertise-tag">Commercial Law</span>
-                        <span class="expertise-tag">Intellectual Property</span>
-                        <span class="expertise-tag">Business Advisory</span>
+                        <span class="expertise-tag">Data Protection Act</span>
+                        <span class="expertise-tag">GDPR Compliance</span>
+                        <span class="expertise-tag">Privacy Law</span>
+                        <span class="expertise-tag">Regulatory Compliance</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Cybersecurity Capabilities Section -->
+    <section class="capabilities-section">
+        <div class="section-header">
+            <h2>Our Cybersecurity Capabilities</h2>
+            <p>Comprehensive legal protection for your digital assets</p>
+        </div>
+
+        <div class="capabilities-grid">
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Legal Risk Assessment</h3>
+                <p>Comprehensive evaluation of your organization's digital risk exposure and legal vulnerabilities</p>
+            </div>
+            
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Digital Investigations</h3>
+                <p>Forensic analysis of security incidents, data breaches, and cybercrime activities</p>
+            </div>
+            
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Policy Development</h3>
+                <p>Creation and implementation of cybersecurity policies, procedures, and compliance frameworks</p>
+            </div>
+            
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Cyber Litigation</h3>
+                <p>Legal representation in cybercrime cases, data breach litigation, and technology disputes</p>
+            </div>
+            
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3>Incident Response</h3>
+                <p>24/7 emergency legal support for cybersecurity incidents and data breaches</p>
+            </div>
+            
+            <div class="capability-item">
+                <div class="capability-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>Training & Awareness</h3>
+                <p>Cybersecurity legal awareness programs for employees and executive teams</p>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="about-cta">
+    <section class="about-cta" style="background: linear-gradient(135deg, var(--cyber-primary) 0%, var(--cyber-dark) 100%);">
         <div class="cta-content">
-            <h2>Ready to Work With Us?</h2>
-            <p>Join hundreds of satisfied clients who have trusted Keniz Agira & Company Advocates with their legal matters. Experience the difference that two decades of excellence can make for your case.</p>
+            <h2 style="color: white;">Secure Your Digital Future Today</h2>
+            <p style="color: rgba(255, 255, 255, 0.9);">Join forward-thinking organizations that trust us with their cybersecurity legal needs. Protect your digital assets with Kenya's leading cybersecurity law specialists.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="cta-btn primary">Schedule Consultation</a>
-                <a href="services.html" class="cta-btn secondary">View Our Services</a>
+                <a href="contact.html" class="cta-btn primary">Schedule Cybersecurity Audit</a>
+                <a href="services.html" class="cta-btn secondary">View Cybersecurity Services</a>
             </div>
         </div>
     </section>
@@ -326,14 +416,14 @@
             <!-- Company Info -->
             <div class="footer-section">
                 <div class="footer-logo">
-                    <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Advocates Logo" class="footer-logo-img">
+                    <img src="Assets/Images/logo.jpg" alt="Keniz Agira & Company Advocates Logo" class="footer-logo-img">
                     <div class="logo-text">
                         <h3>Keniz Agira & Company Advocates</h3>
-                        <p>Expert Legal Solutions for Your Peace of Mind</p>
+                        <p>Cybersecurity & Digital Forensics Legal Specialists</p>
                     </div>
                 </div>
                 <p class="footer-description">
-                    For years, Keniz Agira & Company Advocates has been providing comprehensive legal services with integrity, excellence, and unwavering commitment to client success.
+                    Kenya's premier legal firm specializing in cybersecurity law, digital forensics, and data protection compliance. We protect your digital assets with expert legal solutions.
                 </p>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">
@@ -348,10 +438,20 @@
                     <a href="#" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
                 </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Cybersecurity Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#cybersecurity-advisory"><i class="fas fa-shield-alt"></i> Cybersecurity Advisory</a></li>
+                    <li><a href="services.html#digital-forensics"><i class="fas fa-search"></i> Digital Forensics</a></li>
+                    <li><a href="services.html#data-protection"><i class="fas fa-lock"></i> Data Protection</a></li>
+                    <li><a href="services.html#incident-response"><i class="fas fa-exclamation-triangle"></i> Incident Response</a></li>
+                    <li><a href="services.html#data-breach"><i class="fas fa-database"></i> Data Breach Management</a></li>
+                    <li><a href="services.html#cyber-litigation"><i class="fas fa-gavel"></i> Cyber Litigation</a></li>
+                </ul>
             </div>
 
             <!-- Quick Links -->
@@ -360,23 +460,9 @@
                 <ul class="footer-links">
                     <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
                     <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                    <li><a href="lawyers.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Cybersecurity Services</a></li>
                     <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Firm Profile</a></li>
                     <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Practice Areas -->
-            <div class="footer-section">
-                <h4>Practice Areas</h4>
-                <ul class="footer-links">
-                    <li><a href="services.html#dispute-resolution"><i class="fas fa-gavel"></i> Dispute Resolution</a></li>
-                    <li><a href="services.html#corporate-law"><i class="fas fa-building"></i> Corporate Law</a></li>
-                    <li><a href="services.html#banking-finance"><i class="fas fa-landmark"></i> Banking & Finance</a></li>
-                    <li><a href="services.html#real-estate"><i class="fas fa-home"></i> Real Estate</a></li>
-                    <li><a href="services.html#employment-law"><i class="fas fa-briefcase"></i> Employment Law</a></li>
-                    <li><a href="services.html#immigration"><i class="fas fa-passport"></i> Immigration</a></li>
                 </ul>
             </div>
 
@@ -395,21 +481,21 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Phone Numbers</strong>
-                            <p>+254-723-565739<br>+254-711-000-000</p>
+                            <p>+254-723-565739 (24/7 Cyber Emergency)<br>+254-711-000-000 (General Inquiries)</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email Address</strong>
-                            <p>info@kenizagiraandcompanyadvocates.com<br>consult@kenizagiraandcompanyadvocates.com</p>
+                            <p>cyber@kenizagiraandcompanyadvocates.com<br>consult@kenizagiraandcompanyadvocates.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <strong>Business Hours</strong>
-                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sun: 9:00 AM - 1:00 PM</p>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Cyber Emergency: 24/7 Response</p>
                         </div>
                     </div>
                 </div>
@@ -420,8 +506,8 @@
         <div class="newsletter-section">
             <div class="newsletter-content">
                 <div class="newsletter-text">
-                    <h4><i class="fas fa-envelope-open-text"></i> Stay Updated</h4>
-                    <p>Subscribe to our newsletter for legal insights and updates</p>
+                    <h4><i class="fas fa-shield-alt"></i> Stay Cyber Secure</h4>
+                    <p>Subscribe for cybersecurity legal updates, breach alerts, and compliance insights</p>
                 </div>
                 <form class="newsletter-form">
                     <div class="input-group">
@@ -432,7 +518,7 @@
                     </div>
                     <div class="newsletter-privacy">
                         <input type="checkbox" id="newsletter-privacy" required>
-                        <label for="newsletter-privacy">I agree to receive emails and accept the <a href="#">privacy policy</a></label>
+                        <label for="newsletter-privacy">I agree to receive emails and accept the <a href="privacy-policy.html">privacy policy</a></label>
                     </div>
                 </form>
             </div>
