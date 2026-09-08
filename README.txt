@@ -1,6 +1,6 @@
 KENIZ AGIRA & COMPANY ADVOCATES WEBSITE
 
-This package contains the complete 29-page static website.
+
 
 START HERE
 Open index.html in a browser. Keep the html files and the css, js and images
