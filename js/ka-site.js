@@ -1,0 +1,12 @@
+const kaSiteHeader=document.querySelector('.ka-site-header');
+const kaSiteMenuToggle=document.querySelector('.ka-site-menu-toggle');
+const kaSiteNavigation=document.querySelector('.ka-site-navigation');
+const kaSiteYear=document.querySelector('[data-ka-year]');
+if(kaSiteYear)kaSiteYear.textContent=new Date().getFullYear();
+window.addEventListener('scroll',()=>kaSiteHeader?.classList.toggle('ka-site-header-scrolled',window.scrollY>40),{passive:true});
+kaSiteMenuToggle?.addEventListener('click',()=>{const open=kaSiteMenuToggle.getAttribute('aria-expanded')==='true';kaSiteMenuToggle.setAttribute('aria-expanded',String(!open));kaSiteNavigation.classList.toggle('ka-site-navigation-open',!open);document.body.classList.toggle('ka-site-menu-open',!open)});
+document.querySelectorAll('.ka-site-drop-toggle').forEach(button=>button.addEventListener('click',()=>{const menu=document.querySelector('#'+button.getAttribute('aria-controls'));const open=button.getAttribute('aria-expanded')==='true';document.querySelectorAll('.ka-site-drop-toggle').forEach(other=>{if(other!==button){other.setAttribute('aria-expanded','false');document.querySelector('#'+other.getAttribute('aria-controls'))?.classList.remove('ka-site-drop-open')}});button.setAttribute('aria-expanded',String(!open));menu?.classList.toggle('ka-site-drop-open',!open)}));
+document.querySelectorAll('.ka-site-navigation a').forEach(link=>link.addEventListener('click',()=>{kaSiteMenuToggle?.setAttribute('aria-expanded','false');kaSiteNavigation?.classList.remove('ka-site-navigation-open');document.body.classList.remove('ka-site-menu-open')}));
+document.querySelectorAll('.ka-faq-question').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.ka-faq-item');const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));item.classList.toggle('ka-faq-open',!open);button.querySelector('span').textContent=open?'+':'−'}));
+document.querySelectorAll('.ka-filter-button').forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;document.querySelectorAll('.ka-filter-button').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));document.querySelectorAll('.ka-article-card').forEach(card=>card.hidden=filter!=='all'&&card.dataset.category!==filter)}));
+document.querySelector('.ka-form')?.addEventListener('submit',event=>{event.preventDefault();const status=document.querySelector('.ka-form-status');status?.classList.add('ka-form-status-visible');status?.focus()});
