@@ -175,3 +175,220 @@ body.ka-about-menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+/* =========================================================
+   Founder profile section
+   Unique identifiers prevent conflicts with existing styles
+   ========================================================= */
+
+.ka-founder-profile-section {
+  width: 100%;
+  padding: clamp(5rem, 9vw, 9rem) 0;
+  overflow: hidden;
+  background-color: #07343c;
+  color: #ffffff;
+}
+
+.ka-founder-profile-container {
+  width: min(1180px, calc(100% - 3rem));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(420px, 1.15fr);
+  gap: clamp(4rem, 9vw, 9rem);
+  align-items: center;
+}
+
+/* Founder image */
+
+.ka-founder-profile-portrait {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background-color: #032f37;
+}
+
+.ka-founder-profile-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 600ms ease;
+}
+
+.ka-founder-profile-portrait:hover .ka-founder-profile-image {
+  transform: scale(1.025);
+}
+
+.ka-founder-profile-image-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 45%,
+      rgba(3, 47, 55, 0.18) 65%,
+      rgba(3, 47, 55, 0.92) 100%
+    );
+  pointer-events: none;
+}
+
+.ka-founder-profile-caption {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.75rem;
+  left: 2rem;
+  z-index: 2;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.ka-founder-profile-caption strong {
+  color: #ffffff;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.ka-founder-profile-caption span {
+  color: #e0ad42;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Founder information */
+
+.ka-founder-profile-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.ka-founder-profile-eyebrow {
+  margin: 0 0 1.5rem;
+  color: #e0ad42;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ka-founder-profile-heading {
+  max-width: 640px;
+  margin: 0 0 2rem;
+  color: #ffffff;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.ka-founder-profile-text {
+  max-width: 620px;
+  margin: 0 0 1.2rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.ka-founder-profile-note {
+  max-width: 620px;
+  margin: 2rem 0 0;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.66);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* Tablet responsiveness */
+
+@media (max-width: 900px) {
+  .ka-founder-profile-container {
+    grid-template-columns: minmax(280px, 0.8fr) minmax(360px, 1.2fr);
+    gap: 3rem;
+  }
+
+  .ka-founder-profile-portrait {
+    min-height: 480px;
+  }
+
+  .ka-founder-profile-heading {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+  }
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 720px) {
+  .ka-founder-profile-section {
+    padding: 4.5rem 0;
+  }
+
+  .ka-founder-profile-container {
+    width: calc(100% - 2rem);
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .ka-founder-profile-portrait {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .ka-founder-profile-content {
+    max-width: none;
+  }
+
+  .ka-founder-profile-heading {
+    max-width: 540px;
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+}
+
+@media (max-width: 460px) {
+  .ka-founder-profile-portrait {
+    min-height: 420px;
+  }
+
+  .ka-founder-profile-caption {
+    right: 1.25rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
+  }
+
+  .ka-founder-profile-caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .ka-founder-profile-heading {
+    font-size: clamp(2.5rem, 12vw, 3.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ka-founder-profile-image {
+    transition: none;
+  }
+
+  .ka-founder-profile-portrait:hover .ka-founder-profile-image {
+    transform: none;
+  }
+}
