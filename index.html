@@ -10,6 +10,57 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/ka-home.css">
   <link rel="stylesheet" href="css/ka-site.css">
+  <!-- =====================================================
+     Keniz Agira and Company Advocates favicon
+     ===================================================== -->
+
+<link
+  id="ka-firm-favicon-standard"
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="images/ka-logo.png"
+>
+
+<link
+  id="ka-firm-favicon-large"
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="images/ka-logo.png"
+>
+
+<link
+  id="ka-firm-favicon-shortcut"
+  rel="shortcut icon"
+  type="image/png"
+  href="images/ka-logo.png"
+>
+
+<link
+  id="ka-firm-apple-touch-icon"
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="images/ka-logo.png"
+>
+
+<meta
+  id="ka-firm-browser-theme-color"
+  name="theme-color"
+  content="#075865"
+>
+
+<meta
+  id="ka-firm-mobile-tile-color"
+  name="msapplication-TileColor"
+  content="#075865"
+>
+
+<meta
+  id="ka-firm-mobile-tile-image"
+  name="msapplication-TileImage"
+  content="images/ka-logo.png"
+>
 </head>
 <body class="ka-home-page">
   <a class="ka-home-skip-link" href="#ka-home-main-content">Skip to main content</a>
@@ -168,5 +219,524 @@
     <div class="ka-home-wrap ka-home-footer-bottom"><span>© <span data-ka-year></span> Keniz Agira & Company Advocates</span><span>Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></span></div>
   </footer>
   <script src="js/ka-site.js"></script>
+  <!-- =========================================================
+     KENIZ AGIRA COOKIE CONSENT
+     Add immediately before the closing </body> tag
+     ========================================================= -->
+
+<div
+  id="ka-cookie-consent-v1"
+  class="ka-cookie-consent-v1"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="ka-cookie-consent-v1-title"
+  aria-describedby="ka-cookie-consent-v1-description"
+  hidden
+>
+  <div
+    class="ka-cookie-consent-v1__backdrop"
+    aria-hidden="true"
+  ></div>
+
+  <section class="ka-cookie-consent-v1__dialog">
+    <div class="ka-cookie-consent-v1__accent" aria-hidden="true"></div>
+
+    <div class="ka-cookie-consent-v1__content">
+      <div class="ka-cookie-consent-v1__heading">
+        <img
+          class="ka-cookie-consent-v1__logo"
+          src="images/ka-logo.png"
+          alt=""
+          width="74"
+          height="74"
+        >
+
+        <div>
+          <p class="ka-cookie-consent-v1__eyebrow">
+            Privacy preferences
+          </p>
+
+          <h2
+            class="ka-cookie-consent-v1__title"
+            id="ka-cookie-consent-v1-title"
+          >
+            Your cookies
+          </h2>
+        </div>
+      </div>
+
+      <p
+        class="ka-cookie-consent-v1__description"
+        id="ka-cookie-consent-v1-description"
+      >
+        We use essential cookies to support the operation and security of this
+        website. With your permission, we may also use optional cookies to
+        understand how visitors use the website and improve their experience.
+        You may accept or reject all optional cookies.
+      </p>
+
+      <p class="ka-cookie-consent-v1__legal">
+        For more information about the cookies we use and your privacy rights,
+        please read our
+        <a href="cookie-notice.html">Cookie Notice</a>
+        and
+        <a href="privacy-notice.html">Privacy Notice</a>.
+      </p>
+
+      <div
+        class="ka-cookie-consent-v1__actions"
+        aria-label="Cookie consent choices"
+      >
+        <button
+          class="ka-cookie-consent-v1__button
+                 ka-cookie-consent-v1__button--reject"
+          id="ka-cookie-consent-v1-reject"
+          type="button"
+        >
+          Reject all
+        </button>
+
+        <button
+          class="ka-cookie-consent-v1__button
+                 ka-cookie-consent-v1__button--accept"
+          id="ka-cookie-consent-v1-accept"
+          type="button"
+        >
+          Accept all
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  /* =========================================================
+     Cookie consent styles
+     All rules are scoped to prevent website conflicts
+     ========================================================= */
+
+  #ka-cookie-consent-v1 {
+    --ka-cookie-teal: #075865;
+    --ka-cookie-deep: #032f37;
+    --ka-cookie-gold: #c88a10;
+    --ka-cookie-gold-light: #e0ad42;
+    --ka-cookie-paper: #f5f3ee;
+    --ka-cookie-white: #ffffff;
+    --ka-cookie-ink: #162326;
+    --ka-cookie-muted: #5c686a;
+    --ka-cookie-line: rgba(7, 88, 101, 0.2);
+    --ka-cookie-serif: "Libre Caslon Display", Georgia, serif;
+    --ka-cookie-sans: "DM Sans", Arial, sans-serif;
+
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    font-family: var(--ka-cookie-sans);
+  }
+
+  #ka-cookie-consent-v1[hidden] {
+    display: none;
+  }
+
+  #ka-cookie-consent-v1,
+  #ka-cookie-consent-v1 * {
+    box-sizing: border-box;
+  }
+
+  .ka-cookie-consent-v1__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 31, 36, 0.78);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+  .ka-cookie-consent-v1__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 830px);
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    background: var(--ka-cookie-white);
+    color: var(--ka-cookie-ink);
+    border-radius: 2px;
+    box-shadow: 0 30px 90px rgba(0, 23, 28, 0.38);
+    animation: ka-cookie-consent-v1-enter 350ms ease both;
+  }
+
+  .ka-cookie-consent-v1__accent {
+    width: 100%;
+    height: 6px;
+    background:
+      linear-gradient(
+        90deg,
+        var(--ka-cookie-teal) 0%,
+        var(--ka-cookie-teal) 72%,
+        var(--ka-cookie-gold) 72%,
+        var(--ka-cookie-gold) 100%
+      );
+  }
+
+  .ka-cookie-consent-v1__content {
+    padding: clamp(1.5rem, 4vw, 2.75rem);
+  }
+
+  .ka-cookie-consent-v1__heading {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .ka-cookie-consent-v1__logo {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    padding: 0.35rem;
+    display: block;
+    object-fit: contain;
+    background: var(--ka-cookie-paper);
+    border: 1px solid var(--ka-cookie-line);
+  }
+
+  .ka-cookie-consent-v1__eyebrow {
+    margin: 0 0 0.35rem;
+    color: var(--ka-cookie-gold);
+    font-family: var(--ka-cookie-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .ka-cookie-consent-v1__title {
+    margin: 0;
+    color: var(--ka-cookie-deep);
+    font-family: var(--ka-cookie-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.035em;
+  }
+
+  .ka-cookie-consent-v1__description {
+    max-width: 720px;
+    margin: 0;
+    color: var(--ka-cookie-ink);
+    font-family: var(--ka-cookie-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .ka-cookie-consent-v1__legal {
+    margin: 1rem 0 0;
+    color: var(--ka-cookie-muted);
+    font-family: var(--ka-cookie-sans);
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .ka-cookie-consent-v1__legal a {
+    padding-bottom: 0.1rem;
+    color: var(--ka-cookie-teal);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--ka-cookie-gold);
+  }
+
+  .ka-cookie-consent-v1__legal a:hover,
+  .ka-cookie-consent-v1__legal a:focus-visible {
+    color: var(--ka-cookie-gold);
+  }
+
+  .ka-cookie-consent-v1__actions {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.85rem;
+    border-top: 1px solid var(--ka-cookie-line);
+  }
+
+  .ka-cookie-consent-v1__button {
+    min-width: 150px;
+    min-height: 50px;
+    padding: 0.8rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: var(--ka-cookie-sans);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease,
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .ka-cookie-consent-v1__button:hover {
+    transform: translateY(-2px);
+  }
+
+  .ka-cookie-consent-v1__button:focus-visible {
+    outline: 3px solid var(--ka-cookie-gold-light);
+    outline-offset: 3px;
+  }
+
+  .ka-cookie-consent-v1__button--reject {
+    background: transparent;
+    border-color: var(--ka-cookie-teal);
+    color: var(--ka-cookie-teal);
+  }
+
+  .ka-cookie-consent-v1__button--reject:hover {
+    background: var(--ka-cookie-paper);
+    border-color: var(--ka-cookie-deep);
+    color: var(--ka-cookie-deep);
+  }
+
+  .ka-cookie-consent-v1__button--accept {
+    background: var(--ka-cookie-teal);
+    border-color: var(--ka-cookie-teal);
+    color: var(--ka-cookie-white);
+  }
+
+  .ka-cookie-consent-v1__button--accept:hover {
+    background: var(--ka-cookie-deep);
+    border-color: var(--ka-cookie-deep);
+  }
+
+  body.ka-cookie-consent-v1-page-locked {
+    overflow: hidden;
+  }
+
+  @keyframes ka-cookie-consent-v1-enter {
+    from {
+      opacity: 0;
+      transform: translateY(24px) scale(0.985);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (max-width: 600px) {
+    #ka-cookie-consent-v1 {
+      padding: 1rem;
+      place-items: end center;
+    }
+
+    .ka-cookie-consent-v1__dialog {
+      width: 100%;
+      max-height: calc(100vh - 2rem);
+    }
+
+    .ka-cookie-consent-v1__content {
+      padding: 1.4rem;
+    }
+
+    .ka-cookie-consent-v1__heading {
+      align-items: flex-start;
+      gap: 0.9rem;
+    }
+
+    .ka-cookie-consent-v1__logo {
+      width: 58px;
+      height: 58px;
+      flex-basis: 58px;
+    }
+
+    .ka-cookie-consent-v1__description {
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+    .ka-cookie-consent-v1__actions {
+      flex-direction: column-reverse;
+    }
+
+    .ka-cookie-consent-v1__button {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-cookie-consent-v1__dialog {
+      animation: none;
+    }
+
+    .ka-cookie-consent-v1__button {
+      transition: none;
+    }
+
+    .ka-cookie-consent-v1__button:hover {
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+  (function kaCookieConsentV1Controller() {
+    "use strict";
+
+    var consentElement = document.getElementById(
+      "ka-cookie-consent-v1"
+    );
+
+    var acceptButton = document.getElementById(
+      "ka-cookie-consent-v1-accept"
+    );
+
+    var rejectButton = document.getElementById(
+      "ka-cookie-consent-v1-reject"
+    );
+
+    var storageKey = "ka_cookie_consent_v1";
+    var previousFocus = null;
+
+    if (!consentElement || !acceptButton || !rejectButton) {
+      return;
+    }
+
+    function kaCookieConsentV1ReadChoice() {
+      try {
+        return window.localStorage.getItem(storageKey);
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function kaCookieConsentV1SaveChoice(choice) {
+      try {
+        window.localStorage.setItem(storageKey, choice);
+      } catch (error) {
+        /*
+         The consent event will still be dispatched when storage
+         is unavailable.
+        */
+      }
+    }
+
+    function kaCookieConsentV1Open() {
+      previousFocus = document.activeElement;
+      consentElement.hidden = false;
+
+      document.body.classList.add(
+        "ka-cookie-consent-v1-page-locked"
+      );
+
+      window.requestAnimationFrame(function () {
+        acceptButton.focus();
+      });
+    }
+
+    function kaCookieConsentV1Close() {
+      consentElement.hidden = true;
+
+      document.body.classList.remove(
+        "ka-cookie-consent-v1-page-locked"
+      );
+
+      if (
+        previousFocus &&
+        typeof previousFocus.focus === "function"
+      ) {
+        previousFocus.focus();
+      }
+    }
+
+    function kaCookieConsentV1SetChoice(choice) {
+      kaCookieConsentV1SaveChoice(choice);
+      kaCookieConsentV1Close();
+
+      window.dispatchEvent(
+        new CustomEvent("kaCookieConsentV1Changed", {
+          detail: {
+            choice: choice,
+            optionalCookiesAllowed: choice === "accepted"
+          }
+        })
+      );
+    }
+
+    acceptButton.addEventListener("click", function () {
+      kaCookieConsentV1SetChoice("accepted");
+    });
+
+    rejectButton.addEventListener("click", function () {
+      kaCookieConsentV1SetChoice("rejected");
+    });
+
+    consentElement.addEventListener("keydown", function (event) {
+      if (event.key !== "Tab") {
+        return;
+      }
+
+      var focusableElements =
+        consentElement.querySelectorAll(
+          'button:not([disabled]), a[href]'
+        );
+
+      if (!focusableElements.length) {
+        return;
+      }
+
+      var firstElement = focusableElements[0];
+      var lastElement =
+        focusableElements[focusableElements.length - 1];
+
+      if (
+        event.shiftKey &&
+        document.activeElement === firstElement
+      ) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (
+        !event.shiftKey &&
+        document.activeElement === lastElement
+      ) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    });
+
+    var savedChoice = kaCookieConsentV1ReadChoice();
+
+    if (!savedChoice) {
+      kaCookieConsentV1Open();
+    } else {
+      window.dispatchEvent(
+        new CustomEvent("kaCookieConsentV1Ready", {
+          detail: {
+            choice: savedChoice,
+            optionalCookiesAllowed:
+              savedChoice === "accepted"
+          }
+        })
+      );
+    }
+  })();
+</script>
+<script>
+  window.addEventListener(
+    "kaCookieConsentV1Changed",
+    function (event) {
+      if (event.detail.optionalCookiesAllowed) {
+        /*
+          Load optional analytics or marketing scripts here.
+        */
+      }
+    }
+  );
+</script>
 </body>
 </html>
