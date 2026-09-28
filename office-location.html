@@ -1,71 +1,578 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Office Location | Keniz Agira & Company Advocates</title><meta name="description" content="Find the Nairobi office of Keniz Agira and Company Advocates."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/ka-site.css">
-<!-- =====================================================
-     Keniz Agira and Company Advocates favicon
-     ===================================================== -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Our Office Details | Keniz Agira &amp; Company Advocates</title>
+  <meta name="description" content="Office details, opening hours and contact information for Keniz Agira and Company Advocates in Nairobi, Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/ka-logo.png">
+  <link rel="apple-touch-icon" href="images/ka-logo.png">
+  <meta name="theme-color" content="#073841">
 
-<link
-  id="ka-firm-favicon-standard"
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="images/ka-logo.png"
->
+  <style>
+    :root {
+      --ka-office-guide-ink: #0b282d;
+      --ka-office-guide-teal: #075865;
+      --ka-office-guide-deep: #052f37;
+      --ka-office-guide-gold: #cb901d;
+      --ka-office-guide-cream: #f5f2ec;
+      --ka-office-guide-white: #ffffff;
+      --ka-office-guide-line: rgba(7, 88, 101, .19);
+      --ka-office-guide-serif: "Libre Caslon Display", Georgia, serif;
+      --ka-office-guide-sans: "DM Sans", Arial, sans-serif;
+    }
 
-<link
-  id="ka-firm-favicon-large"
-  rel="icon"
-  type="image/png"
-  sizes="192x192"
-  href="images/ka-logo.png"
->
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body.ka-office-guide-page {
+      margin: 0;
+      color: var(--ka-office-guide-ink);
+      background: var(--ka-office-guide-cream);
+      font: 16px/1.65 var(--ka-office-guide-sans);
+    }
+    body.ka-office-guide-page.ka-office-guide-locked { overflow: hidden; }
+    .ka-office-guide-page a { color: inherit; }
+    .ka-office-guide-page img { max-width: 100%; }
+    .ka-office-guide-page button { font: inherit; }
+    .ka-office-guide-sr {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+    .ka-office-guide-skip {
+      position: fixed;
+      top: -100px;
+      left: 20px;
+      z-index: 200;
+      padding: 12px 18px;
+      color: #fff;
+      background: var(--ka-office-guide-deep);
+    }
+    .ka-office-guide-skip:focus { top: 16px; }
 
-<link
-  id="ka-firm-favicon-shortcut"
-  rel="shortcut icon"
-  type="image/png"
-  href="images/ka-logo.png"
->
+    /* Header */
+    .ka-office-guide-header {
+      position: relative;
+      z-index: 40;
+      background: rgba(255, 255, 255, .98);
+      border-top: 2px solid var(--ka-office-guide-teal);
+      box-shadow: 0 8px 30px rgba(0, 32, 38, .08);
+    }
+    .ka-office-guide-header-inner {
+      width: min(1280px, calc(100% - 48px));
+      min-height: 96px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 38px;
+    }
+    .ka-office-guide-brand {
+      display: inline-flex;
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+    .ka-office-guide-brand img {
+      display: block;
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+    .ka-office-guide-nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 2.6vw, 42px);
+    }
+    .ka-office-guide-nav a {
+      position: relative;
+      color: var(--ka-office-guide-ink);
+      font-size: .84rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .ka-office-guide-nav a::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -9px;
+      left: 0;
+      height: 2px;
+      background: var(--ka-office-guide-gold);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .2s ease;
+    }
+    .ka-office-guide-nav a:hover::after,
+    .ka-office-guide-nav a:focus-visible::after,
+    .ka-office-guide-nav a[aria-current="page"]::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    .ka-office-guide-menu {
+      display: none;
+      width: 46px;
+      height: 46px;
+      margin-left: auto;
+      padding: 0;
+      color: var(--ka-office-guide-deep);
+      background: transparent;
+      border: 1px solid var(--ka-office-guide-line);
+      cursor: pointer;
+    }
+    .ka-office-guide-menu i {
+      display: block;
+      width: 20px;
+      height: 1px;
+      margin: 6px auto;
+      background: currentColor;
+      transition: transform .2s ease;
+    }
 
-<link
-  id="ka-firm-apple-touch-icon"
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="images/ka-logo.png"
->
+    /* Hero */
+    .ka-office-guide-hero {
+      position: relative;
+      min-height: 620px;
+      isolation: isolate;
+      overflow: hidden;
+      color: #fff;
+      background: var(--ka-office-guide-deep);
+    }
+    .ka-office-guide-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: url("images/ka-site-office-reception.png") center / cover no-repeat;
+      transform: scale(1.02);
+    }
+    .ka-office-guide-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(2, 27, 32, .95), rgba(2, 27, 32, .72) 54%, rgba(2, 27, 32, .38)),
+        linear-gradient(0deg, rgba(2, 27, 32, .48), transparent 55%);
+    }
+    .ka-office-guide-hero-inner {
+      width: min(1160px, calc(100% - 48px));
+      margin: auto;
+      padding: 82px 0 190px;
+      display: grid;
+      grid-template-columns: minmax(0, 760px) 230px;
+      gap: 80px;
+      align-items: end;
+    }
+    .ka-office-guide-breadcrumb {
+      margin-bottom: 74px;
+      display: flex;
+      gap: 12px;
+      color: rgba(255, 255, 255, .66);
+      font-size: .8rem;
+    }
+    .ka-office-guide-breadcrumb a { text-decoration: none; }
+    .ka-office-guide-eyebrow {
+      margin: 0 0 20px;
+      color: #efb33e;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    .ka-office-guide-hero h1 {
+      margin: 0;
+      font: 400 clamp(4rem, 8vw, 7.6rem)/.92 var(--ka-office-guide-serif);
+      letter-spacing: -.045em;
+    }
+    .ka-office-guide-hero h1 em {
+      display: block;
+      color: #f3c46b;
+      font-style: normal;
+    }
+    .ka-office-guide-hero-note {
+      margin: 28px 0 0;
+      max-width: 620px;
+      color: rgba(255, 255, 255, .83);
+      font-size: 1.08rem;
+    }
+    .ka-office-guide-hero-actions {
+      display: grid;
+      gap: 12px;
+    }
+    .ka-office-guide-hero-actions a {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 17px;
+      font-size: .83rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, .72);
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .ka-office-guide-hero-actions a:first-child {
+      color: var(--ka-office-guide-deep);
+      background: var(--ka-office-guide-gold);
+      border-color: var(--ka-office-guide-gold);
+    }
+    .ka-office-guide-hero-actions a:hover,
+    .ka-office-guide-hero-actions a:focus-visible {
+      color: #fff;
+      background: var(--ka-office-guide-teal);
+      border-color: var(--ka-office-guide-teal);
+    }
 
-<meta
-  id="ka-firm-browser-theme-color"
-  name="theme-color"
-  content="#075865"
->
+    /* Office card */
+    .ka-office-guide-main {
+      position: relative;
+      z-index: 5;
+      margin-top: -118px;
+      padding-bottom: 92px;
+    }
+    .ka-office-guide-wrap {
+      width: min(1160px, calc(100% - 48px));
+      margin: auto;
+    }
+    .ka-office-guide-card {
+      display: grid;
+      grid-template-columns: minmax(270px, .82fr) 1.18fr;
+      background: #fff;
+      box-shadow: 0 28px 75px rgba(0, 30, 36, .18);
+    }
+    .ka-office-guide-photo {
+      min-height: 470px;
+      background:
+        linear-gradient(0deg, rgba(3, 45, 53, .22), rgba(3, 45, 53, .05)),
+        url("images/ka-site-office-reception.png") center / cover no-repeat;
+    }
+    .ka-office-guide-details {
+      padding: clamp(38px, 5.5vw, 76px);
+      display: grid;
+      align-content: center;
+    }
+    .ka-office-guide-details h2 {
+      margin: 0 0 26px;
+      color: var(--ka-office-guide-teal);
+      font: 400 clamp(2.7rem, 4.7vw, 4.8rem)/1 var(--ka-office-guide-serif);
+      letter-spacing: -.035em;
+    }
+    .ka-office-guide-address {
+      margin: 0;
+      color: #304b50;
+      font-size: 1.02rem;
+      font-style: normal;
+    }
+    .ka-office-guide-address strong {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--ka-office-guide-ink);
+      font-size: 1.08rem;
+    }
+    .ka-office-guide-contact-grid {
+      margin-top: 34px;
+      padding-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      border-top: 1px solid var(--ka-office-guide-line);
+    }
+    .ka-office-guide-contact-grid span {
+      display: block;
+      margin-bottom: 5px;
+      color: #6b7c80;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .ka-office-guide-contact-grid a {
+      color: var(--ka-office-guide-teal);
+      font-weight: 600;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+    .ka-office-guide-directions {
+      width: fit-content;
+      margin-top: 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      padding: 14px 20px;
+      color: #fff;
+      background: var(--ka-office-guide-teal);
+      font-size: .85rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .ka-office-guide-directions:hover,
+    .ka-office-guide-directions:focus-visible { background: var(--ka-office-guide-deep); }
 
-<meta
-  id="ka-firm-mobile-tile-color"
-  name="msapplication-TileColor"
-  content="#075865"
->
+    /* Visit information */
+    .ka-office-guide-visit {
+      padding: 86px 0;
+      background: #fff;
+    }
+    .ka-office-guide-visit-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(50px, 9vw, 130px);
+    }
+    .ka-office-guide-visit h2 {
+      max-width: 450px;
+      margin: 0;
+      font: 400 clamp(2.6rem, 4.5vw, 4.6rem)/1.04 var(--ka-office-guide-serif);
+      letter-spacing: -.035em;
+    }
+    .ka-office-guide-visit h2 em {
+      color: var(--ka-office-guide-teal);
+      font-style: normal;
+    }
+    .ka-office-guide-visit-copy > p { margin: 0 0 26px; color: #52686d; }
+    .ka-office-guide-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid var(--ka-office-guide-line);
+      border-left: 1px solid var(--ka-office-guide-line);
+    }
+    .ka-office-guide-fact {
+      min-height: 150px;
+      padding: 24px;
+      border-right: 1px solid var(--ka-office-guide-line);
+      border-bottom: 1px solid var(--ka-office-guide-line);
+    }
+    .ka-office-guide-fact span {
+      color: var(--ka-office-guide-gold);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .ka-office-guide-fact strong {
+      display: block;
+      margin-top: 13px;
+      color: var(--ka-office-guide-deep);
+      font: 400 1.45rem/1.25 var(--ka-office-guide-serif);
+    }
 
-<meta
-  id="ka-firm-mobile-tile-image"
-  name="msapplication-TileImage"
-  content="images/ka-logo.png"
->
-</head><body class="ka-site-page ka-office-location"><a class="ka-site-skip" href="#ka-office-location-main">Skip to main content</a>
-<header class="ka-site-header"><div class="ka-site-nav-shell">
-  <a class="ka-site-brand" href="index.html" aria-label="Keniz Agira & Company Advocates home"><img src="images/ka-logo.png" alt="Keniz Agira & Company Advocates"></a>
-  <button class="ka-site-menu-toggle" type="button" aria-expanded="false" aria-controls="ka-site-navigation"><span>Menu</span><i></i><i></i></button>
-  <nav class="ka-site-navigation" id="ka-site-navigation" aria-label="Primary navigation">
-    <div class="ka-site-drop"><button class="ka-site-drop-toggle" type="button" aria-expanded="false" aria-controls="ka-site-about-menu">About <span aria-hidden="true">⌄</span></button><div class="ka-site-drop-menu" id="ka-site-about-menu"><a href="our-firm.html">Our Firm</a><a href="our-founder.html">Our Founder</a><a href="our-values.html">Our Values</a><a href="our-approach.html">Our Approach</a><a href="community-mentorship.html">Community &amp; Mentorship</a></div></div>
-    <div class="ka-site-drop"><button class="ka-site-drop-toggle" type="button" aria-expanded="false" aria-controls="ka-site-cyber-menu">Cyber &amp; Technology <span aria-hidden="true">⌄</span></button><div class="ka-site-drop-menu ka-site-wide" id="ka-site-cyber-menu"><a href="cyber-technology.html">Practice Overview</a><a href="cybercrime-digital-offences.html">Cybercrime &amp; Digital Offences</a><a href="digital-evidence-forensics.html">Digital Evidence &amp; Forensics</a><a href="data-protection-privacy.html">Data Protection &amp; Privacy</a><a href="cyber-incident-data-breach-response.html">Cyber Incident &amp; Data Breach Response</a><a href="technology-emerging-tech.html">Technology &amp; Emerging-Tech Advisory</a></div></div>
-    <a href="other-legal-services.html">Other Legal Services</a>
-    <div class="ka-site-drop"><button class="ka-site-drop-toggle" type="button" aria-expanded="false" aria-controls="ka-site-people-menu">Our People <span aria-hidden="true">⌄</span></button><div class="ka-site-drop-menu" id="ka-site-people-menu"><a href="our-founder.html">Our Founder</a><span class="ka-site-pending">Team pages await confirmation</span></div></div>
-    <div class="ka-site-drop"><button class="ka-site-drop-toggle" type="button" aria-expanded="false" aria-controls="ka-site-insights-menu">Insights <span aria-hidden="true">⌄</span></button><div class="ka-site-drop-menu" id="ka-site-insights-menu"><a href="insights.html">Insights Overview</a><a href="articles-legal-updates.html">Articles &amp; Legal Updates</a><a href="cybersecurity-alerts.html">Cybersecurity Alerts</a><a href="guides-resources.html">Guides &amp; Resources</a><a href="faqs.html">Frequently Asked Questions</a></div></div>
-    <div class="ka-site-drop"><button class="ka-site-drop-toggle" type="button" aria-expanded="false" aria-controls="ka-site-contact-menu">Contact <span aria-hidden="true">⌄</span></button><div class="ka-site-drop-menu" id="ka-site-contact-menu"><a href="contact.html">Contact the Firm</a><a href="request-consultation.html">Request a Consultation</a><a href="office-location.html">Office Location</a></div></div>
-  </nav>
-  <a class="ka-site-button ka-site-nav-cta" href="request-consultation.html">Request a consultation</a>
-</div></header><main id="ka-office-location-main"><section class="ka-page-hero"><div class="ka-site-wrap ka-page-hero-inner"><div><div class="ka-page-breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</div><p class="ka-site-eyebrow ka-site-eyebrow-light">Contact</p><h1>Office<br><em>Location</em></h1></div><div class="ka-page-hero-aside"><p>A central Nairobi location for consultations arranged with the firm.</p></div></div></section><section class="ka-site-section"><div class="ka-site-wrap ka-overview-intro"><div class="ka-overview-index"><span>Office hours</span><strong>08:00</strong><p>to 17:00, Monday to Friday</p></div><div class="ka-overview-copy"><p class="ka-site-eyebrow">Nairobi</p><h2>Solar House, 6th Floor, Room 605.</h2><p class="ka-site-lead">Opposite Co-operative Bank and the Bomb Blast Memorial in Nairobi’s central business district.</p><p>Contact the firm before visiting to confirm appointment arrangements, building access and any documents you should bring.</p><a class="ka-site-button ka-site-button-gold" href="tel:+254780671715">Call before visiting</a></div></div></section><section class="ka-site-cta"><div class="ka-site-wrap ka-site-cta-grid"><div><p class="ka-site-eyebrow ka-site-eyebrow-light">Begin with a conversation</p><h2>Tell us what has happened and what you need to understand.</h2></div><div class="ka-site-cta-actions"><a class="ka-site-button ka-site-button-gold" href="request-consultation.html">Request a consultation</a><a class="ka-site-button ka-site-button-outline" href="tel:+254780671715">Call 0780 671 715</a><p>Monday to Friday, 8:00 a.m. to 5:00 p.m.</p></div></div></section></main><footer class="ka-site-footer"><div class="ka-site-wrap ka-site-footer-grid">
-  <div class="ka-site-footer-brand"><img src="images/ka-logo.png" alt=""><p>Law and technology, explained with clarity and handled with care.</p></div>
-  <div><h2>Key practices</h2><a href="cyber-technology.html">Cyber &amp; Technology</a><a href="other-legal-services.html">Other Legal Services</a><a href="our-founder.html">Our Founder</a><a href="insights.html">Insights</a></div>
-  <div><h2>Contact</h2><a href="tel:+254780671715">0780 671 715</a><a href="mailto:keniz@worldwaysone.co.ke">keniz@worldwaysone.co.ke</a><a href="contact.html">Contact the Firm</a><a href="request-consultation.html">Request a Consultation</a></div>
-  <div><h2>Legal</h2><a href="privacy-notice.html">Privacy Notice</a><a href="cookie-notice.html">Cookie Notice</a><a href="terms-of-use.html">Website Terms</a><a href="legal-disclaimer.html">Legal Disclaimer</a><a href="complaints-procedure.html">Complaints Procedure</a><a href="accessibility.html">Accessibility</a><a href="sitemap.html">Sitemap</a></div>
-</div><div class="ka-site-wrap ka-site-footer-bottom"><span>© <span data-ka-year></span> Keniz Agira & Company Advocates</span><span>Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></span></div></footer><script src="js/ka-site.js"></script></body></html>
+    /* Footer */
+    .ka-office-guide-footer {
+      color: rgba(255, 255, 255, .78);
+      background: #04262c;
+    }
+    .ka-office-guide-footer-main,
+    .ka-office-guide-footer-bottom {
+      width: min(1160px, calc(100% - 48px));
+      margin: auto;
+    }
+    .ka-office-guide-footer-main {
+      padding: 42px 0;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 70px;
+      align-items: center;
+    }
+    .ka-office-guide-footer-brand { display: flex; align-items: center; gap: 18px; }
+    .ka-office-guide-footer-brand img { width: 82px; height: 82px; padding: 6px; object-fit: contain; background: #fff; }
+    .ka-office-guide-footer-brand p { max-width: 270px; margin: 0; font: 400 1.2rem/1.4 var(--ka-office-guide-serif); }
+    .ka-office-guide-footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .ka-office-guide-footer a { text-underline-offset: 4px; text-decoration-color: rgba(255, 255, 255, .28); }
+    .ka-office-guide-footer-bottom {
+      padding: 19px 0 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      font-size: .77rem;
+    }
+
+    @media (max-width: 900px) {
+      .ka-office-guide-menu { display: block; }
+      .ka-office-guide-nav {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        margin: 0;
+        padding: 130px 28px 50px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0;
+        color: #fff;
+        background: var(--ka-office-guide-deep);
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-12px);
+        transition: opacity .22s ease, transform .22s ease, visibility .22s;
+      }
+      .ka-office-guide-nav.ka-office-guide-nav-open { visibility: visible; opacity: 1; transform: none; }
+      .ka-office-guide-nav a { padding: 15px 0; color: #fff; font: 400 clamp(1.8rem, 6vw, 3rem) var(--ka-office-guide-serif); border-bottom: 1px solid rgba(255, 255, 255, .17); }
+      .ka-office-guide-nav a::after { display: none; }
+      .ka-office-guide-menu[aria-expanded="true"] i:first-of-type { transform: translateY(3.5px) rotate(45deg); }
+      .ka-office-guide-menu[aria-expanded="true"] i:last-of-type { transform: translateY(-3.5px) rotate(-45deg); }
+      .ka-office-guide-hero-inner { grid-template-columns: 1fr; gap: 45px; }
+      .ka-office-guide-hero-actions { max-width: 380px; }
+      .ka-office-guide-card { grid-template-columns: 1fr; }
+      .ka-office-guide-photo { min-height: 330px; }
+      .ka-office-guide-visit-grid { grid-template-columns: 1fr; }
+      .ka-office-guide-footer-main { grid-template-columns: 1fr 1fr; }
+      .ka-office-guide-footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 620px) {
+      .ka-office-guide-header-inner,
+      .ka-office-guide-hero-inner,
+      .ka-office-guide-wrap,
+      .ka-office-guide-footer-main,
+      .ka-office-guide-footer-bottom { width: calc(100% - 32px); }
+      .ka-office-guide-header-inner { min-height: 80px; }
+      .ka-office-guide-brand img { width: 58px; height: 58px; }
+      .ka-office-guide-hero { min-height: 650px; }
+      .ka-office-guide-hero::before { background-position: 62% center; }
+      .ka-office-guide-hero-inner { padding: 56px 0 165px; }
+      .ka-office-guide-breadcrumb { margin-bottom: 65px; }
+      .ka-office-guide-hero h1 { font-size: clamp(3.5rem, 18vw, 5.2rem); }
+      .ka-office-guide-main { margin-top: -95px; padding-bottom: 66px; }
+      .ka-office-guide-card { box-shadow: 0 20px 50px rgba(0, 30, 36, .15); }
+      .ka-office-guide-photo { min-height: 250px; }
+      .ka-office-guide-details { padding: 34px 25px 39px; }
+      .ka-office-guide-contact-grid { grid-template-columns: 1fr; }
+      .ka-office-guide-facts { grid-template-columns: 1fr; }
+      .ka-office-guide-footer-main { grid-template-columns: 1fr; gap: 26px; }
+      .ka-office-guide-footer-brand { grid-column: auto; }
+      .ka-office-guide-footer-bottom { flex-direction: column; gap: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .ka-office-guide-page * { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body class="ka-office-guide-page">
+  <a class="ka-office-guide-skip" href="#ka-office-guide-main">Skip to main content</a>
+
+  <header class="ka-office-guide-header">
+    <div class="ka-office-guide-header-inner">
+      <a class="ka-office-guide-brand" href="index.html" aria-label="Keniz Agira and Company Advocates home">
+        <img src="images/ka-logo.png" alt="Keniz Agira and Company Advocates">
+      </a>
+
+      <button class="ka-office-guide-menu" type="button" aria-expanded="false" aria-controls="ka-office-guide-navigation">
+        <span class="ka-office-guide-sr">Open navigation</span><i aria-hidden="true"></i><i aria-hidden="true"></i>
+      </button>
+
+      <nav class="ka-office-guide-nav" id="ka-office-guide-navigation" aria-label="Primary navigation">
+        <a href="office-location.html" aria-current="page">Our office details</a>
+        <a href="cyber-technology.html">Areas of Practice</a>
+        <a href="our-founder.html">Our Professionals</a>
+        <a href="insights.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ka-office-guide-main">
+    <section class="ka-office-guide-hero" aria-labelledby="ka-office-guide-title">
+      <div class="ka-office-guide-hero-inner">
+        <div>
+          <div class="ka-office-guide-breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">›</span><span>Our office details</span></div>
+          <p class="ka-office-guide-eyebrow">Nairobi, Kenya</p>
+          <h1 id="ka-office-guide-title">Our Office <em>Details</em></h1>
+          <p class="ka-office-guide-hero-note">Arrange a consultation with the firm at our Nairobi central business district office.</p>
+        </div>
+
+        <div class="ka-office-guide-hero-actions">
+          <a href="tel:+254780671715">Speak to the Lawyer <span aria-hidden="true">→</span></a>
+          <a href="request-consultation.html">Request a Consultation <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ka-office-guide-main" aria-labelledby="ka-office-guide-nairobi">
+      <div class="ka-office-guide-wrap">
+        <article class="ka-office-guide-card">
+          <div class="ka-office-guide-photo" role="img" aria-label="Professional office interior"></div>
+          <div class="ka-office-guide-details">
+            <p class="ka-office-guide-eyebrow">Keniz Agira &amp; Company Advocates</p>
+            <h2 id="ka-office-guide-nairobi">Nairobi</h2>
+            <address class="ka-office-guide-address">
+              <strong>Solar House, 6th Floor, Room 605</strong>
+              Opposite Co-operative Bank and the Bomb Blast Memorial<br>
+              Nairobi Central Business District<br>
+              Nairobi, Kenya
+            </address>
+
+            <div class="ka-office-guide-contact-grid">
+              <div><span>Telephone</span><a href="tel:+254780671715">0780 671 715</a></div>
+              <div><span>Email</span><a href="mailto:keniz@worldwaysone.co.ke">keniz@worldwaysone.co.ke</a></div>
+            </div>
+
+            <a class="ka-office-guide-directions" href="https://www.google.com/maps/search/?api=1&amp;query=Solar+House+Nairobi+Kenya" target="_blank" rel="noopener noreferrer">Open directions <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ka-office-guide-visit" aria-labelledby="ka-office-guide-visit-title">
+      <div class="ka-office-guide-wrap ka-office-guide-visit-grid">
+        <div>
+          <p class="ka-office-guide-eyebrow">Plan your visit</p>
+          <h2 id="ka-office-guide-visit-title">A considered meeting starts with <em>clear arrangements.</em></h2>
+        </div>
+        <div class="ka-office-guide-visit-copy">
+          <p>Please contact the firm before visiting so that we can confirm the appointment, building access and any documents you should bring. Do not bring confidential digital devices or original evidence unless the lawyer has asked you to do so.</p>
+          <div class="ka-office-guide-facts">
+            <div class="ka-office-guide-fact"><span>Office hours</span><strong>Monday to Friday<br>8:00 a.m. to 5:00 p.m.</strong></div>
+            <div class="ka-office-guide-fact"><span>Appointments</span><strong>Advance booking is recommended.</strong></div>
+            <div class="ka-office-guide-fact"><span>Location</span><strong>Nairobi Central Business District.</strong></div>
+            <div class="ka-office-guide-fact"><span>Before you attend</span><strong>Call to confirm access and documents.</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ka-office-guide-footer">
+    <div class="ka-office-guide-footer-main">
+      <div class="ka-office-guide-footer-brand"><img src="images/ka-logo.png" alt=""><p>Law and technology, explained with clarity and handled with care.</p></div>
+      <div class="ka-office-guide-footer-links"><a href="privacy-notice.html">Privacy Notice</a><a href="terms-of-use.html">Terms of Use</a><a href="legal-disclaimer.html">Legal Disclaimer</a></div>
+      <div class="ka-office-guide-footer-links"><a href="contact.html">Contact</a><a href="request-consultation.html">Consultation</a></div>
+    </div>
+    <div class="ka-office-guide-footer-bottom"><span>© <span id="ka-office-guide-year"></span> Keniz Agira &amp; Company Advocates</span><span>Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></span></div>
+  </footer>
+
+  <script>
+    (() => {
+      const button = document.querySelector('.ka-office-guide-menu');
+      const navigation = document.getElementById('ka-office-guide-navigation');
+      const closeMenu = () => {
+        button.setAttribute('aria-expanded', 'false');
+        navigation.classList.remove('ka-office-guide-nav-open');
+        document.body.classList.remove('ka-office-guide-locked');
+      };
+
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') !== 'true';
+        button.setAttribute('aria-expanded', String(open));
+        navigation.classList.toggle('ka-office-guide-nav-open', open);
+        document.body.classList.toggle('ka-office-guide-locked', open);
+      });
+
+      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+      document.getElementById('ka-office-guide-year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
