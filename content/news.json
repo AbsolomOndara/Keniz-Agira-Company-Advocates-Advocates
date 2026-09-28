@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {"title":"When an online incident becomes a legal matter","date":"2026-09-18","category":"cybercrime","categoryLabel":"Cybercrime","excerpt":"A practical starting point for separating urgent facts from assumptions after an online incident."},
+    {"title":"Preserving messages and records after a dispute begins","date":"2026-09-10","category":"digital-evidence","categoryLabel":"Digital Evidence","excerpt":"Early handling decisions can affect the reliability and usefulness of electronic information."},
+    {"title":"Privacy responsibilities begin before a complaint","date":"2026-08-28","category":"data-protection","categoryLabel":"Data Protection","excerpt":"Questions organisations should ask about the personal information they collect, use and retain."},
+    {"title":"Legal questions to ask before adopting artificial intelligence","date":"2026-08-12","category":"emerging-technology","categoryLabel":"Emerging Technology","excerpt":"A measured starting point for reviewing agreements, data use, ownership and responsibility."},
+    {"title":"Technology contracts should answer ordinary business questions","date":"2026-07-25","category":"business-law","categoryLabel":"Business Law","excerpt":"Scope, payment, ownership, risk allocation and exit arrangements remain essential."},
+    {"title":"Preparing digital information for a wider dispute","date":"2026-07-08","category":"litigation","categoryLabel":"Litigation","excerpt":"A clear chronology and reliable context can help legal advisers understand a developing matter."}
+  ]
+}

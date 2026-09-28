@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY
+  branch: main
+
+media_folder: images/news
+public_folder: /images/news
+
+collections:
+  - name: news
+    label: News and Insights
+    files:
+      - name: news_posts
+        label: Published news
+        file: content/news.json
+        format: json
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Publication date, name: date, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD }
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  - { label: Cybercrime, value: cybercrime }
+                  - { label: Digital Evidence, value: digital-evidence }
+                  - { label: Data Protection, value: data-protection }
+                  - { label: Emerging Technology, value: emerging-technology }
+                  - { label: Business Law, value: business-law }
+                  - { label: Litigation, value: litigation }
+              - { label: Category label, name: categoryLabel, widget: string }
+              - { label: Summary, name: excerpt, widget: text }

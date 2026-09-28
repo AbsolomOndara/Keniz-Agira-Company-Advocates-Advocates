@@ -458,29 +458,37 @@
       .ka-office-guide-page * { transition-duration: .01ms !important; }
     }
   </style>
+<link rel="stylesheet" href="css/ka-global-navigation.css">
 </head>
 
 <body class="ka-office-guide-page">
+<header class="kagn-header" data-kagn-header>
+  <div class="kagn-header-inner">
+    <a class="kagn-brand" href="index.html" aria-label="Keniz Agira and Company Advocates home"><img src="images/ka-logo.png" alt="Keniz Agira and Company Advocates"></a>
+    <nav class="kagn-primary" aria-label="Primary navigation"><a href="office-location.html">Our office details</a><a href="cyber-technology.html">Areas of Practice</a><a href="our-founder.html">Our Professionals</a><a href="insights.html">News</a></nav>
+    <div class="kagn-tools">
+      <button class="kagn-icon-button" type="button" data-kagn-open-search aria-label="Search this website"><svg class="kagn-search-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="2"/><path d="m21 21 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <button class="kagn-icon-button" type="button" data-kagn-open-menu aria-label="Open navigation"><span class="kagn-menu-lines" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    </div>
+  </div>
+</header>
+<div class="kagn-backdrop" aria-hidden="true"></div>
+<aside class="kagn-drawer" aria-hidden="true" aria-label="Expanded navigation">
+  <div class="kagn-drawer-head"><a href="index.html"><img src="images/ka-logo.png" alt="Keniz Agira and Company Advocates"></a><button class="kagn-close" type="button" data-kagn-close-menu aria-label="Close navigation"></button></div>
+  <div class="kagn-drawer-main">
+    <nav class="kagn-drawer-links"><a href="office-location.html">Our office details</a><a href="cyber-technology.html">Areas of Practice</a><a href="our-founder.html">Our Professionals</a><a href="insights.html">News and Insights</a><a href="about.html">About the Firm</a></nav>
+    <div class="kagn-drawer-secondary"><a href="contact.html">Contact the Firm</a><a href="privacy-notice.html">Privacy Notice</a></div>
+    <div class="kagn-drawer-actions"><a class="kagn-drawer-action" href="request-consultation.html">Request a Consultation <span aria-hidden="true">→</span></a><a class="kagn-drawer-action" href="tel:+254780671715">Speak to the Lawyer <span aria-hidden="true">→</span></a></div>
+    <p class="kagn-drawer-credit">Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></p>
+  </div>
+</aside>
+<section class="kagn-search-panel" aria-hidden="true" aria-labelledby="kagn-search-title">
+  <div class="kagn-search-head"><a href="index.html"><img src="images/ka-logo.png" alt="Keniz Agira and Company Advocates"></a><button class="kagn-close" type="button" data-kagn-close-search aria-label="Close search"></button></div>
+  <div class="kagn-search-body"><p class="kagn-search-kicker">Website Search</p><h2 id="kagn-search-title">What can we help you find?</h2><form class="kagn-search-form" role="search"><label class="ka-practice-detail-sr ka-office-guide-sr ka-practices-guide-sr ka-new-home-sr" for="kagn-search-input">Search this website</label><input class="kagn-search-input" id="kagn-search-input" type="search" autocomplete="off" placeholder="Search practices, people, news or contact information"><button class="kagn-search-submit" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></form><p class="kagn-search-hint">Search across the firm’s published pages and practice areas.</p><div class="kagn-search-results" hidden></div><div class="kagn-search-empty" hidden>No matching page was found. Try a broader term.</div></div>
+</section>
   <a class="ka-office-guide-skip" href="#ka-office-guide-main">Skip to main content</a>
 
-  <header class="ka-office-guide-header">
-    <div class="ka-office-guide-header-inner">
-      <a class="ka-office-guide-brand" href="index.html" aria-label="Keniz Agira and Company Advocates home">
-        <img src="images/ka-logo.png" alt="Keniz Agira and Company Advocates">
-      </a>
-
-      <button class="ka-office-guide-menu" type="button" aria-expanded="false" aria-controls="ka-office-guide-navigation">
-        <span class="ka-office-guide-sr">Open navigation</span><i aria-hidden="true"></i><i aria-hidden="true"></i>
-      </button>
-
-      <nav class="ka-office-guide-nav" id="ka-office-guide-navigation" aria-label="Primary navigation">
-        <a href="office-location.html" aria-current="page">Our office details</a>
-        <a href="cyber-technology.html">Areas of Practice</a>
-        <a href="our-founder.html">Our Professionals</a>
-        <a href="insights.html">News</a>
-      </nav>
-    </div>
-  </header>
+  
 
   <main id="ka-office-guide-main">
     <section class="ka-office-guide-hero" aria-labelledby="ka-office-guide-title">
@@ -508,7 +516,7 @@
             <h2 id="ka-office-guide-nairobi">Nairobi</h2>
             <address class="ka-office-guide-address">
               <strong>Solar House, 6th Floor, Room 605</strong>
-              Aga Khan Walk,Opposite Co-operative Bank and the Bomb Blast Memorial<br>
+              Aga Khan Walk, Opposite Co-operative Bank and the Bomb Blast Memorial<br>
               Nairobi Central Business District<br>
               Nairobi, Kenya
             </address>
@@ -543,36 +551,9 @@
     </section>
   </main>
 
-  <footer class="ka-office-guide-footer">
-    <div class="ka-office-guide-footer-main">
-      <div class="ka-office-guide-footer-brand"><img src="images/ka-logo.png" alt=""><p>Law and technology, explained with clarity and handled with care.</p></div>
-      <div class="ka-office-guide-footer-links"><a href="privacy-notice.html">Privacy Notice</a><a href="terms-of-use.html">Terms of Use</a><a href="legal-disclaimer.html">Legal Disclaimer</a></div>
-      <div class="ka-office-guide-footer-links"><a href="contact.html">Contact</a><a href="request-consultation.html">Consultation</a></div>
-    </div>
-    <div class="ka-office-guide-footer-bottom"><span>© <span id="ka-office-guide-year"></span> Keniz Agira &amp; Company Advocates</span><span>Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></span></div>
-  </footer>
+  
 
-  <script>
-    (() => {
-      const button = document.querySelector('.ka-office-guide-menu');
-      const navigation = document.getElementById('ka-office-guide-navigation');
-      const closeMenu = () => {
-        button.setAttribute('aria-expanded', 'false');
-        navigation.classList.remove('ka-office-guide-nav-open');
-        document.body.classList.remove('ka-office-guide-locked');
-      };
-
-      button.addEventListener('click', () => {
-        const open = button.getAttribute('aria-expanded') !== 'true';
-        button.setAttribute('aria-expanded', String(open));
-        navigation.classList.toggle('ka-office-guide-nav-open', open);
-        document.body.classList.toggle('ka-office-guide-locked', open);
-      });
-
-      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-      document.getElementById('ka-office-guide-year').textContent = new Date().getFullYear();
-    })();
-  </script>
+  <footer class="kagn-footer"><div class="kagn-footer-main"><div class="kagn-footer-brand"><img src="images/ka-logo.png" alt=""><p>Law and technology, explained with clarity and handled with care.</p></div><div class="kagn-footer-links"><a href="privacy-notice.html">Privacy Notice</a><a href="cookie-notice.html">Cookie Notice</a><a href="terms-of-use.html">Terms of Use</a><a href="legal-disclaimer.html">Legal Disclaimer</a></div><div class="kagn-footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="request-consultation.html">Consultation</a></div></div><div class="kagn-footer-bottom"><span>© <span data-kagn-year></span> Keniz Agira &amp; Company Advocates</span><span>Developed by <a href="https://www.worldwaysweb-developers.co.ke/" target="_blank" rel="noopener noreferrer">Worldways Web Developers</a></span></div></footer>
+<script src="js/ka-global-navigation.js"></script>
 </body>
 </html>
